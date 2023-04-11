@@ -179,7 +179,7 @@ const stuff =
                 ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
               ]
             ],
-    testing: [
+    test:   [
               [ // 6
                 ["AB", "BC", "BC"],
                 ["AB-1"],
