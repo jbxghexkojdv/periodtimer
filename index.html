@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Period Timer v1.15.0</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" href="../img/logo_small.png" type="image/png" />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <div id="main-page">
+      <p id="period-display">Loading...</p>
+      <p id="timer-display">Loading...</p>
+      <p id="credits">By Benjamin Harris</p>
+      <button onclick="testt()" id="testing-toggle">Not Testing</button>
+      <button onclick="functions_general.gradechange()" id="grade">6<sup>th</sup> grade schedule</button>
+      <button onclick="openHotkeys();" id="hotkey-button">Hotkeys</button>
+      <p id="debug-element"></p>
+      <input type="file" onchange="handleImage(event)">
+      <img id="bgimg" alt="background image">
+    </div>
+    <div id="hotkey-screen">
+      <p id="hotkey-display">
+        6 - Sets the timer to the 6th grade schedule<br />
+        7 - Sets the timer to the 6th grade schedule<br />
+        8 - Sets the timer to the 8th grade schedule<br />
+        C - Cycles through text colors, options are opposite of background, white, and black<br />
+        E - Removes background image<br />
+        F - Cycles through fonts; Shift reverses it<br />
+        I - Opens image for background; Shift blocks it<br />
+        L - Cycles through languages; Shift reverses it<br />
+        P - Pauses the timer<br />
+        T - Cycles through schedules; Shift reverses it<br />
+        Space - Cycles through color schemes, options are dark, light, and colorful, Shift reverses it, it does not apply to this screen<br />
+      </p>
+      <button id="close-hotkeys" onclick="closeHotkeys();">&#x2715;</button>
+    </div>
+    <script src="time.js"></script>
+    <script src="schedules.js"></script>
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!-- Слава Україні! -->
