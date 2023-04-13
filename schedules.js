@@ -195,8 +195,7 @@ const stuff =
                 ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                 ["5-6", "5-6", "5-6"],
                 ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
-                ["Lunch", "Almuerzo", "Déjeuner"],
-                ["Lunch-7", "Almuerzo-7", "Déjeuner-7"],
+                ["6-7", "6-7", "6-7"],
                 ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ["7-8", "7-8", "7-8"],
                 ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
@@ -216,8 +215,7 @@ const stuff =
                 ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                 ["5-6", "5-6", "5-6"],
                 ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
-                ["Lunch", "Almuerzo", "Déjeuner"],
-                ["Lunch-7", "Almuerzo-7", "Déjeuner-7"],
+                ["6-7", "6-7", "6-7"],
                 ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ["7-8", "7-8", "7-8"],
                 ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
@@ -237,8 +235,7 @@ const stuff =
                 ["Lunch", "Almuerzo", "Déjeuner"],
                 ["Lunch-6", "Almuerzo-6", "Déjeuner-6"],
                 ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
-                ["Lunch", "Almuerzo", "Déjeuner"],
-                ["Lunch-7", "Almuerzo-7", "Déjeuner-7"],
+                ["6-7", "6-7", "6-7"],
                 ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ["7-8", "7-8", "7-8"],
                 ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
