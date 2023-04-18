@@ -179,7 +179,8 @@ const functions_general =
     non.style.fontFamily = fonts[font_num];
     gradep.style.fontFamily = fonts[font_num];
     document.getElementById("credits").style.fontFamily = fonts[font_num];
-    document.getElementById("dark-mode-button").style.fontFamily = fonts[font_num];
+    document.getElementById("issue-link").style.fontFamily = fonts[font_num];
+    document.getElementById("hotkey-button").style.fontFamily = fonts[font_num];
   },
   textColorChange()
   {

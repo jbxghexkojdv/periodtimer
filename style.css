@@ -79,6 +79,16 @@ body
   text-align: left;
 }
 
+#issue-link
+{
+  left: 0;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  color: #ccf;
+  text-decoration: underline;
+}
+
 #debug-element
 {
   position: absolute;
