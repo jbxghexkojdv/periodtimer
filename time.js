@@ -1,10 +1,15 @@
 const testOffset = 0;// forward offset, in hours
 const time_obj = {
 
+    /**
+    * Returns the date value mod 86400 seconds of the hour, minute, and seconds
+    * @param {Number} h The hour, in local time
+    * @param {Number} m The minute, in local time
+    */
     ofDay(h, m, s = 0)
     {
       let retval = ((((((h+(new Date().getTimezoneOffset()/60)-testOffset)*60)+m)*60)+s)*1000)%86400000;
-      for(;;)
+      while(true)
       {
         if(retval >= 0)
         {
@@ -16,6 +21,13 @@ const time_obj = {
         }
       }
     },
+    /**
+    * Returns the date value mod 86400 seconds of the hour, minute, and seconds
+    * @param {Number} h The hour in local time
+    * @param {Number} m The minute in local time
+    * @param {Number} s The second in local time
+    * @param {Number} d The day in local time, Thursday is 0, Wednesday is 6
+    */
     ofWeek(h, m, s = 0, d = 0)
     {
       /*
@@ -28,7 +40,7 @@ const time_obj = {
       Wed:6
       */
       let retval =  ((((((((h+(new Date().getTimezoneOffset()/60)-testOffset)*60)+m)*60)+s)*1000)+(d*86400000))%604800000);
-      for(;;)
+      while(true)
       {
         if(retval >= 0)
         {
@@ -40,6 +52,11 @@ const time_obj = {
         }
       }
     },
+    /**
+     * 
+     * @param {Number} seconds 
+     * @param {string} unit
+     */
     fromSeconds(seconds, unit = "auto")
     {
       if (unit == "auto")

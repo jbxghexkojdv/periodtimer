@@ -36,6 +36,44 @@ window.times =
               /*  Teleport - 12:45  */time_obj.ofDay(13, 15), // Lu 8
               time_obj.ofDay(13, 18), time_obj.ofDay(14,  0), // P7 8
               time_obj.ofDay(14,  3), time_obj.ofDay(14, 45), // P8 8
+            ],
+            [   //         Start time               End time
+              time_obj.ofDay( 7, 55), time_obj.ofDay( 8, 40), // P1 1 THS
+              time_obj.ofDay( 8, 45), time_obj.ofDay( 9, 30), // P2 1 THS
+              time_obj.ofDay( 9, 35), time_obj.ofDay(10, 20), // P3 1 THS
+              time_obj.ofDay(10, 25), time_obj.ofDay(11, 10), // P4 1 THS
+              /*  Teleport - 11:10  */time_obj.ofDay(11, 40), // Lu 1 THS
+              time_obj.ofDay(11, 45), time_obj.ofDay(12, 30), // P5 1 THS
+              time_obj.ofDay(12, 35), time_obj.ofDay(13, 20), // P6 1 THS
+              time_obj.ofDay(13, 25), time_obj.ofDay(14, 10), // P7 1 THS
+              time_obj.ofDay(14, 15), time_obj.ofDay(15,  0), // P8 1 THS
+            ],
+            [   //         Start time               End time
+              time_obj.ofDay( 7, 55), time_obj.ofDay( 8, 40), // P1 2 THS
+              time_obj.ofDay( 8, 45), time_obj.ofDay( 9, 30), // P2 2 THS
+              time_obj.ofDay( 9, 35), time_obj.ofDay(10, 20), // P3 2 THS
+              time_obj.ofDay(10, 25), time_obj.ofDay(11, 10), // P4 2 THS
+              time_obj.ofDay(11, 15), time_obj.ofDay(12,  0), // P5 2 THS
+              /*  Teleport - 12:00  */time_obj.ofDay(12, 30), // Lu 2 THS
+              time_obj.ofDay(12, 35), time_obj.ofDay(13, 20), // P6 2 THS
+              time_obj.ofDay(13, 25), time_obj.ofDay(14, 10), // P7 2 THS
+              time_obj.ofDay(14, 15), time_obj.ofDay(15,  0), // P8 2 THS
+            ],
+            [   //         Start time               End time
+              time_obj.ofDay( 7, 55), time_obj.ofDay( 9, 18), // P1/2 1 THS BLOCK
+              time_obj.ofDay( 9, 23), time_obj.ofDay(10,  6), // TrTi 1 THS BLOCK
+              time_obj.ofDay(10, 11), time_obj.ofDay(11, 34), // P3/4 1 THS BLOCK
+              /*  Teleport - 11:34  */time_obj.ofDay(12,  4), // Lunc 1 THS BLOCK
+              time_obj.ofDay(12,  9), time_obj.ofDay(13, 32), // P5/6 1 THS BLOCK
+              time_obj.ofDay(13, 37), time_obj.ofDay(15,  0), // P7/8 1 THS BLOCK
+            ],
+            [   //         Start time               End time
+              time_obj.ofDay( 7, 55), time_obj.ofDay( 9, 18), // P1/2 2 THS BLOCK
+              time_obj.ofDay( 9, 23), time_obj.ofDay(10,  6), // TrTi 2 THS BLOCK
+              time_obj.ofDay(10, 11), time_obj.ofDay(11, 34), // P3/4 2 THS BLOCK
+              time_obj.ofDay(11, 39), time_obj.ofDay(13,  2), // P5/6 2 THS BLOCK
+              /*  Teleport - 13:02  */time_obj.ofDay(13, 32), // Lunc 2 THS BLOCK
+              time_obj.ofDay(13, 37), time_obj.ofDay(15,  0), // P7/8 2 THS BLOCK
             ]
           ],
   test:   [
@@ -177,7 +215,91 @@ const stuff =
                 ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ["7-8", "7-8", "7-8"],
                 ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
-              ]
+              ],
+              [ // THS 1
+                ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                ["1-2", "1-2", "1-2"],
+                ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                ["2-3", "2-3", "2-3"],
+                ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                ["3-4", "3-4", "3-4"],
+                ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                ["Lunch", "Almuerzo", "Déjeuner"],
+                ["Lunch-5", "Almuerzo-5", "Déjeuner-5"],
+                ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                ["5-6", "5-6", "5-6"],
+                ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                ["6-7", "6-7", "6-7"],
+                ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                ["7-8", "7-8", "7-8"],
+                ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
+              ],
+              [ // THS 2
+                ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                ["1-2", "1-2", "1-2"],
+                ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                ["2-3", "2-3", "2-3"],
+                ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                ["3-4", "3-4", "3-4"],
+                ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                ["4-5", "4-5", "4-5"],
+                ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                ["Lunch", "Almuerzo", "Déjeuner"],
+                ["Lunch-6", "Almuerzo-6", "Déjeuner-6"],
+                ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                ["6-7", "6-7", "6-7"],
+                ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                ["7-8", "7-8", "7-8"],
+                ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
+              ],
+              [ // THS 1 ODD BLOCK
+                ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                ["1-Tro. Time", "1-Tiem. Tro.", "1-Tem. Tro."],
+                ["Tro. Time", "Tiem. Tro.", "Tem. Tro."],
+                ["Tro. Time-3", "Tiem. Tro.-3", "Tem. Tro.-3"],
+                ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                ["Lunch", "Almuerzo", "Déjeuner"],
+                ["Lunch-5", "Almuerzo-5", "Déjeuner-5"],
+                ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                ["5-7", "5-7", "5-7"],
+                ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+              ],
+              [ // THS 2 ODD BLOCK
+                ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                ["1-Tro. Time", "1-Tiem. Tro.", "1-Tem. Tro."],
+                ["Tro. Time", "Tiem. Tro.", "Tem. Tro."],
+                ["Tro. Time-3", "Tiem. Tro.-3", "Tem. Tro.-3"],
+                ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                ["3-5", "3-5", "3-5"],
+                ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                ["Lunch", "Almuerzo", "Déjeuner"],
+                ["Lunch-7", "Almuerzo-7", "Déjeuner-7"],
+                ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+              ],
+              [ // THS 1 EVEN BLOCK
+                ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                ["2-Tro. Time", "2-Tiem. Tro.", "2-Tem. Tro."],
+                ["Tro. Time", "Tiem. Tro.", "Tem. Tro."],
+                ["Tro. Time-4", "Tiem. Tro.-4", "Tem. Tro.-4"],
+                ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                ["Lunch", "Almuerzo", "Déjeuner"],
+                ["Lunch-6", "Almuerzo-6", "Déjeuner-6"],
+                ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                ["6-8", "6-8", "6-8"],
+                ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"],
+              ],
+              [ // THS 2 EVEN BLOCK
+                ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                ["2-Tro. Time", "2-Tiem. Tro.", "2-Tem. Tro."],
+                ["Tro. Time", "Tiem. Tro.", "Tem. Tro."],
+                ["Tro. Time-4", "Tiem. Tro.-4", "Tem. Tro.-4"],
+                ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                ["4-6", "4-6", "4-6"],
+                ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                ["Lunch", "Almuerzo", "Déjeuner"],
+                ["Lunch-8", "Almuerzo-8", "Déjeuner-8"],
+                ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"],
+              ],
             ],
     test:   [
               [ // 6

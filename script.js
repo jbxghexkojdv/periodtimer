@@ -100,8 +100,11 @@ const functions_general =
         case 2: 
           gradep.innerHTML = lang[settings.lang].gr8sched;
           break;
-        case 3:
-          gradep.innerHTML = lang[settings.lang].paused;
+        case 3: 
+          gradep.innerHTML = lang[settings.lang].ths1;
+          break;
+        case 4: 
+          gradep.innerHTML = lang[settings.lang].ths2;
           break;
         default:
           gradep.innerHTML = "why you do dat";
@@ -139,9 +142,9 @@ const functions_general =
     }
     if (settings.grade < 0)
     {
-      settings.grade += 3;
+      settings.grade += 5;
     }
-    settings.grade %= 3;
+    settings.grade %= 5;
     this.update.grade();
   },
   langchange()
@@ -327,7 +330,7 @@ function updateTimer(timesIn, periodsIn)
 {
   const now = Date.now() % 86400000;
 
-  const startOfDay = time_obj.ofDay(7, 50);
+  const startOfDay = timesIn[0];
   const endOfDay = timesIn[timesIn.length - 1];
 
   const lengthOfDay = endOfDay - startOfDay >= 0 ? endOfDay - startOfDay : endOfDay - startOfDay + 86400000;
@@ -345,7 +348,7 @@ function updateTimer(timesIn, periodsIn)
     document.body.style.backgroundColor = color.toHue(color.decimalToColor(percentageRaw/2));
   }
   periodDisplay.innerHTML = lang[settings.lang].learnt;
-  timerDisplay.innerHTML = time_obj.fromMilliseconds((time_obj.ofDay(7, 50)+86400000-now)%86400000) + lang[settings.lang].ussa;
+  timerDisplay.innerHTML = time_obj.fromMilliseconds((timesIn[0]+86400000-now)%86400000) + lang[settings.lang].ussa;
 
   for(let i = 0; i + 1 < timesIn.length; i++)
   {
@@ -361,13 +364,10 @@ function think()
   const yes = new Date();
   const timeOfWeek = Date.now() % 604800000;
   const timeOfDay = Date.now() % 86400000;
-  const isWeekend = ((time_obj.ofWeek(14, 44, 59, 1) < timeOfWeek) && (timeOfWeek < time_obj.ofWeek(7, 45, 1, 4)));
+  const isWeekend = ((time_obj.ofWeek(15, 00, 00, 1) < timeOfWeek) && (timeOfWeek < time_obj.ofWeek(7, 50, 1, 4)));
   let isSummer = ((yes.getMonth() >= 4) && (yes.getMonth() <= 7));
-  if ((yes.getMonth() == 7 && yes.getDate() >= 11) || (yes.getMonth() == 4 && yes.getDate() <= 23))
-  {
-    isSummer = false;
-  }
-  if ((yes.getMonth() == 7 && (((settings.grade ? 11 : 10) <= yes.getDate()) && (yes.getDate() <= (settings.grade ? 17 : 16)))) && (yes.getDay() >= (settings.grade ? 4 : 3)))
+  //                   August               the 8th                    May                 the 23rd
+  if ((yes.getMonth() == 7 && yes.getDate() >= 8) || (yes.getMonth() == 4 && yes.getDate() <= 23))
   {
     isSummer = false;
   }
@@ -380,8 +380,10 @@ function think()
         updateTimer(times.assembly[settings.grade], stuff.assembly[settings.grade]);
       }
       else if(settings.schedule === 1)
-      {
-        updateTimer(times.normal[settings.grade], stuff.normal[settings.grade]);
+      { //                        Is middle school        Is Monday                          Block schedule
+        updateTimer(times.normal[settings.grade < 3 || yes.getDay() == 1 ? settings.grade : settings.grade + 2],
+        //                                                                                    Is Tuesday or Thursday                 Even block schedule  Odd block schedule
+                    stuff.normal[settings.grade < 3 || yes.getDay() == 1 ? settings.grade : yes.getDay() == 2 || yes.getDay() == 4 ? settings.grade + 4 : settings.grade + 2]);
       }
       else
       {
@@ -391,18 +393,17 @@ function think()
     else
     {
       periodDisplay.innerHTML = lang[settings.lang].learnt;
-      timerDisplay.innerHTML = time_obj.fromMilliseconds(time_obj.ofWeek(7, 50, 0, 4)-timeOfWeek+(settings.grade*180000)) + lang[settings.lang].ussa;
+      timerDisplay.innerHTML = time_obj.fromMilliseconds(time_obj.ofWeek(7, 50, 0, 4)-timeOfWeek) + lang[settings.lang].ussa;
     }
   }
   else if(!settings.paused)
   {
     periodDisplay.innerHTML = lang[settings.lang].summer;
     const dayIfNecessary = settings.grade ? 86400000 : 0
-    timerDisplay.innerHTML = time_obj.fromMilliseconds(Number(new Date("Aug 10, 2022 07:50:00")) - Number(yes) + dayIfNecessary) + lang[settings.lang].ussa;
+    timerDisplay.innerHTML = time_obj.fromMilliseconds(Number(new Date("Aug 8, 2023 07:50:00")) - Number(yes) + dayIfNecessary) + lang[settings.lang].ussa;
   }
   functions_general.update.darkMode();
 }
-setInterval(think, 1000/8);
 function tdm()
 {
   if (!settings.shifting)
@@ -435,6 +436,12 @@ document.addEventListener("keyup", () => {
       break;
     case "Digit8": // set to 8th grade schedule
       settings.grade = 2;
+      break;
+    case "Digit9": // set to 8th grade schedule
+      settings.grade = 3;
+      break;
+    case "Digit0": // set to 8th grade schedule
+      settings.grade = 4;
       break;
     case "KeyT": // toggle testing schedule
       testt();
@@ -535,3 +542,4 @@ function closeHotkeys()
 {
   document.getElementById("hotkey-screen").style.display = "none";
 }
+setInterval(think, 1000/8);
