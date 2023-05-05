@@ -17,6 +17,7 @@ let settings =
   shifting: false,
   lang: 0,
   textColor: 0,
+  paused: false,
 };
 
 function range(num)
@@ -370,7 +371,7 @@ function think()
   {
     isSummer = false;
   }
-  if (!isSummer)
+  if (!isSummer && !settings.paused)
   {
     if (!isWeekend)
     {
@@ -382,18 +383,18 @@ function think()
       {
         updateTimer(times.normal[settings.grade], stuff.normal[settings.grade]);
       }
-      else if(settings.schedule !== 3)
+      else
       {
         updateTimer(times.test[settings.grade], stuff.test[settings.grade]);
       }
     }
-    else if(settings.schedule !== 3)
+    else
     {
       periodDisplay.innerHTML = lang[settings.lang].learnt;
       timerDisplay.innerHTML = time_obj.fromMilliseconds(time_obj.ofWeek(7, 50, 0, 4)-timeOfWeek+(settings.grade*180000)) + lang[settings.lang].ussa;
     }
   }
-  else if(settings.schedule !== 3)
+  else if(!settings.paused)
   {
     periodDisplay.innerHTML = lang[settings.lang].summer;
     const dayIfNecessary = settings.grade ? 86400000 : 0
@@ -457,6 +458,7 @@ document.addEventListener("keyup", () => {
         flipped: false,
         lang: 0,
         textColor: 0,
+        paused: false,
       };
       resetImage();
       break;
@@ -480,7 +482,7 @@ document.addEventListener("keyup", () => {
       document.getElementById("bgimg").classList.toggle("flip");
       break;
     case "KeyP": // pause
-      settings.grade = 3;
+      settings.paused = !settings.paused;
       break;
     case "KeyL": // language change
       functions_general.langchange();
