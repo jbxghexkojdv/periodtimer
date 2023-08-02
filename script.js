@@ -124,7 +124,7 @@ function noNegativeModulo(dis, dat)
 
 function updateTimer(timesIn, periodsIn)
 {
-  const now = (Date.now() + time.testingOffset) % 86400000;
+  const now = (Date.now() + (time.testingOffset * 3600_000)) % 86400000;
 
   const startOfDay = timesIn[0];
   const endOfDay = timesIn[timesIn.length - 1];
@@ -157,9 +157,9 @@ function updateTimer(timesIn, periodsIn)
 }
 function doTimerControl()
 {
-  const yes = new Date(Date.now + time.testingOffset);
-  const timeOfWeek = (Date.now() + time.testingOffset) % 604800000;
-  const timeOfDay = (Date.now() + time.testingOffset) % 86400000;
+  const yes = new Date(Date.now() + (time.testingOffset * 3600_000));
+  const timeOfWeek = (Date.now() + (time.testingOffset * 3600_000)) % 604800000;
+  const timeOfDay = (Date.now() + (time.testingOffset * 3600_000)) % 86400000;
   const isWeekend = ((time.ofWeek(15,  0,  0, 1) < timeOfWeek) && (timeOfWeek < time.ofWeek(7, 50, 1, 4)));
   let isSummer = ((yes.getMonth() >= 4) && (yes.getMonth() <= 7));
   //                   August               the 8th                    May                 the 23rd
