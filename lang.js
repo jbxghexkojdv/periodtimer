@@ -1,4 +1,4 @@
-const lang = [
+export default [
     {//English
         gr6sched: "RMS 6",
         gr7sched: "RMS 7",

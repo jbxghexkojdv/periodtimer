@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Period Timer v1.15.3</title>
+    <title>Period Timer v1.15.4</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
     <link rel="icon" href="../img/logo_small.png" type="image/png" />
     <meta name="viewport" content="width=device-width" />
@@ -16,15 +16,15 @@
       </p>
       <button onclick="testt()" id="testing-toggle">Normal</button>
       <button onclick="functions_general.gradechange()" id="grade">RMS 6</button>
-      <button onclick="openHotkeys();" id="hotkey-button">Hotkeys</button>
+      <button id="hotkey-button">Hotkeys</button>
       <p id="debug-element"></p>
-      <input type="file" onchange="handleImage(event)">
+      <input type="file" id="image-selector">
       <img id="bgimg" alt="background image">
     </div>
     <div id="hotkey-screen">
       <p id="hotkey-display">
         6 - Sets the timer to the 6th grade schedule<br />
-        7 - Sets the timer to the 6th grade schedule<br />
+        7 - Sets the timer to the 7th grade schedule<br />
         8 - Sets the timer to the 8th grade schedule<br />
         9 - Sets the timer to the THS 1st lunch schedule<br />
         0 - Sets the timer to the THS 2nd lunch schedule<br />
@@ -37,12 +37,9 @@
         T - Cycles through schedules; Shift reverses it<br />
         Space - Cycles through color schemes, options are dark, light, and colorful, Shift reverses it, it does not apply to this screen<br />
       </p>
-      <button id="close-hotkeys" onclick="closeHotkeys();">&#x2715;</button>
+      <button id="close-hotkeys">&#x2715;</button>
     </div>
-    <script src="time.js"></script>
-    <script src="schedules.js"></script>
-    <script src="lang.js"></script>
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
   </body>
 </html>
 <!-- Слава Україні! -->

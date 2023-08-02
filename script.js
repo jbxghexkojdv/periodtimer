@@ -1,9 +1,12 @@
+// debugger;
+
+// Variables
 let periodDisplay = document.getElementById("period-display");
 let timerDisplay = document.getElementById("timer-display");
-let non = document.getElementById("testing-toggle");
-let gradep = document.getElementById("grade");
+let testingButton = document.getElementById("testing-toggle");
+let gradeButton = document.getElementById("grade");
 
-window.mobileCheck = function() 
+function mobileCheck() 
 {
   return screen.width < screen.height;
 };
@@ -20,6 +23,74 @@ let settings =
   paused: false,
 };
 
+
+
+// Exports
+
+export default
+{
+  /**
+   * 
+   * @param {object} object 
+   * @returns {void}
+   */
+  setSettings(object)
+  {
+    settings = object;
+  },
+  /**
+   * 
+   * @param {string} id The ID of the element you want to set the insides of.
+   * @param {string} content The insides to be the new insides.
+   * @returns {void}
+   */
+  setElementInsides(id, content)
+  {
+    document.getElementById(id).innerHTML = content;
+  },
+  /**
+   * 
+   * @param {string} id The ID of the element you want to glow up.
+   * @param {string} property The way you want to glow it up.
+   * @param {string} content How you will glow it up.
+   */
+  setStyleInfo(id, property, content)
+  {
+    document.getElementById(id).style[property] = content;
+  },
+  /**
+   * @returns {object} the settings
+   */
+  getSettings()
+  {
+    return settings;
+  },
+  /**
+   * 
+   * @param {string} id The ID of the element you want to set the insides of.
+   * @returns {string} The insides of the element.
+   */
+  getElementInsides(id)
+  {
+    return document.getElementById(id).innerHTML;
+  },
+  /**
+   * @returns {void}
+   */
+  updateTimer()
+  {
+    doTimerControl();
+  }
+};
+// Imports
+import scheduleData from "./schedules.js";
+import time from "./time.js";
+import lang from "./lang.js";
+import keys from "./keys.js";
+import color from "./color.js";
+import userStyling from "./userstyling.js";
+import update from "./update.js";
+
 function range(num)
 {
   let arr = [];
@@ -28,250 +99,6 @@ function range(num)
     arr.push(i);
   }
   return arr;
-}
-
-const color = 
-{
-  toHue(color_code)
-  {
-    color_code = Math.round(color_code);
-    let r;
-    let g;
-    let b;
-    const stage = Math.floor(color_code / 255);
-    const theWayThrough = color_code % 255;
-    switch(stage)
-    {
-      case 0:
-        r = 255;
-        g = theWayThrough;
-        b = 0;
-        break;
-      case 1:
-        r = 255-theWayThrough;
-        g = 255;
-        b = 0;
-        break;
-      case 2:
-        r = 0;
-        g = 255;
-        b = theWayThrough;
-        break;
-      case 3:
-        r = 0;
-        g = 255-theWayThrough;
-        b = 255;
-        break;
-      case 4:
-        r = theWayThrough;
-        g = 0;
-        b = 255;
-        break;
-      case 5:
-        r = 255;
-        g = 0;
-        b = 255-theWayThrough;
-        break;
-      default:
-        print("Something went wrong.");
-    }
-    return `rgb(${r}, ${g}, ${b})`;
-  },
-  decimalToColor(dec)
-  {
-    return dec*1530;
-  }
-};
-
-const functions_general = 
-{
-  update: 
-  {
-    grade()
-    {
-      switch(settings.grade)
-      {
-        case 0:
-          gradep.innerHTML = lang[settings.lang].gr6sched;
-          break;
-        case 1:
-          gradep.innerHTML = lang[settings.lang].gr7sched;
-          break;
-        case 2: 
-          gradep.innerHTML = lang[settings.lang].gr8sched;
-          break;
-        case 3: 
-          gradep.innerHTML = lang[settings.lang].ths1;
-          break;
-        case 4: 
-          gradep.innerHTML = lang[settings.lang].ths2;
-          break;
-        default:
-          gradep.innerHTML = "why you do dat";
-      }
-    },
-    darkMode()
-    {
-      if (settings.darkMode == 1)
-      {
-        document.body.style.backgroundColor = "#000000";
-      }
-      else if (settings.darkMode == 2)
-      {
-        document.body.style.backgroundColor = "#FFFFFF";
-      }
-      else if(periodDisplay.innerHTML == lang[settings.lang].learnt || periodDisplay.innerHTML == lang[settings.lang].summer)
-      {
-        const isWeekend = ((time_obj.ofWeek(14, 44, 59, 1) < (Date.now()%604800000)) && ((Date.now()%604800000) < time_obj.ofWeek(7, 45, 1, 4)));
-        const timeUntilSchool = isWeekend ? (time_obj.ofWeek(7, 45, 1, 4)-(Date.now()%604800000)) : ((time_obj.ofDay(7, 45, 1)+86400000)-(Date.now()%86400000))%86400000;
-        const TUSFraction = isWeekend && (timeUntilSchool > 0) ? 1-((timeUntilSchool+230700000)/461400000) : 1-((timeUntilSchool/*+57900000*/)/115800000);
-        const bgColor = color.toHue(color.decimalToColor(TUSFraction));
-        document.body.style.backgroundColor = bgColor;
-      }
-    },
-  },
-  gradechange()
-  {
-    if (!settings.shifting)
-    {
-      settings.grade++;
-    }
-    else
-    {
-      settings.grade--;
-    }
-    if (settings.grade < 0)
-    {
-      settings.grade += 5;
-    }
-    settings.grade %= 5;
-    this.update.grade();
-  },
-  langchange()
-  {
-    if (!settings.shifting)
-    {
-      settings.lang++;
-    }
-    else
-    {
-      settings.lang--;
-    }
-    if (settings.lang < 0)
-    {
-      settings.lang += 3;
-    }
-    settings.lang %= 3;
-  },
-  cycleFonts()
-  {
-    if (!settings.shifting)
-    {
-      font_num++;
-    }
-    else
-    {
-      font_num--;
-    }
-    if (font_num < 0)
-    {
-      font_num += fonts.length;
-    }
-    font_num %= fonts.length;
-    periodDisplay.style.fontFamily = fonts[font_num];
-    timerDisplay.style.fontFamily = fonts[font_num];
-    non.style.fontFamily = fonts[font_num];
-    gradep.style.fontFamily = fonts[font_num];
-    document.getElementById("credits").style.fontFamily = fonts[font_num];
-    document.getElementById("issue-link").style.fontFamily = fonts[font_num];
-    document.getElementById("hotkey-button").style.fontFamily = fonts[font_num];
-  },
-  textColorChange()
-  {
-    if (!settings.shifting)
-    {
-      settings.textColor++;
-    }
-    else
-    {
-      settings.textColor--;
-    }
-    if (settings.textColor < 0)
-    {
-      settings.textColor += 3;
-    }
-    settings.textColor %= 3;
-    if(settings.textColor === 0)
-    {
-      periodDisplay.style.color = "#fff";
-      timerDisplay.style.color = "#fff";
-      non.style.color = "#fff";
-      gradep.style.color = "#fff";
-      document.getElementById("credits").style.color = "#fff";
-      document.getElementById("hotkey-button").style.color = "#fff";
-      periodDisplay.style.mixBlendMode = "difference";
-      timerDisplay.style.mixBlendMode = "difference";
-      non.style.mixBlendMode = "difference";
-      gradep.style.mixBlendMode = "difference";
-      document.getElementById("credits").style.mixBlendMode = "difference";
-      document.getElementById("hotkey-button").style.mixBlendMode = "difference";
-    }
-    else if(settings.textColor === 1)
-    {
-      periodDisplay.style.color = "#fff";
-      timerDisplay.style.color = "#fff";
-      non.style.color = "#fff";
-      gradep.style.color = "#fff";
-      document.getElementById("credits").style.color = "#fff";
-      document.getElementById("hotkey-button").style.color = "#fff";
-      periodDisplay.style.mixBlendMode = "normal";
-      timerDisplay.style.mixBlendMode = "normal";
-      non.style.mixBlendMode = "normal";
-      gradep.style.mixBlendMode = "normal";
-      document.getElementById("credits").style.mixBlendMode = "normal";
-      document.getElementById("hotkey-button").style.mixBlendMode = "normal";
-    }
-    else
-    {
-      periodDisplay.style.color = "#000";
-      timerDisplay.style.color = "#000";
-      non.style.color = "#000";
-      gradep.style.color = "#000";
-      document.getElementById("credits").style.color = "#000";
-      document.getElementById("hotkey-button").style.color = "#000";
-      periodDisplay.style.mixBlendMode = "normal";
-      timerDisplay.style.mixBlendMode = "normal";
-      non.style.mixBlendMode = "normal";
-      gradep.style.mixBlendMode = "normal";
-      document.getElementById("credits").style.mixBlendMode = "normal";
-      document.getElementById("hotkey-button").style.mixBlendMode = "normal";
-    }
-  },
-};
-
-function resetImage()
-{
-  document.getElementById("bgimg").remove();
-  document.body.appendChild(
-  elem = document.createElement("img"));
-  functions_general.update.darkMode();
-  elem.id = "bgimg";
-  elem.style.display = "none";
-  elem.alt = "background image"
-}
-
-const fonts = ["Helvetica", "Georgia", "Cursive", "Verdana", "Courier New"];
-let font_num = 0;
-
-function zeroify(num, digits = 2)
-{
-  let nums = num.toString(10);
-  an = digits - (nums.length);
-  for (let j = 0; j < an; j++)
-  {
-    nums = "0" + nums;
-  }
-  return nums;
 }
 
 function noNegativeModulo(dis, dat)
@@ -295,40 +122,9 @@ function noNegativeModulo(dis, dat)
   return dis % dat;
 }
 
-function testt()
-{
-  if (!settings.shifting)
-  {
-    settings.schedule++;
-  }
-  else
-  {
-    settings.schedule--;
-  }
-  if (settings.schedule < 0)
-  {
-    settings.schedule += 3;
-  }
-  settings.schedule %= 3;
-  if (settings.schedule === 0)
-  {
-    document.getElementById("testing-toggle").innerHTML = lang[settings.lang].assembly;
-  }
-  else if(settings.schedule === 1)
-  {
-    document.getElementById("testing-toggle").innerHTML = lang[settings.lang].ntest;
-  }
-  else
-  {
-    document.getElementById("testing-toggle").innerHTML = lang[settings.lang].ytest;
-  }
-
-  think();
-}
-
 function updateTimer(timesIn, periodsIn)
 {
-  const now = Date.now() % 86400000;
+  const now = (Date.now() + time.testingOffset) % 86400000;
 
   const startOfDay = timesIn[0];
   const endOfDay = timesIn[timesIn.length - 1];
@@ -348,23 +144,23 @@ function updateTimer(timesIn, periodsIn)
     document.body.style.backgroundColor = color.toHue(color.decimalToColor(percentageRaw/2));
   }
   periodDisplay.innerHTML = lang[settings.lang].learnt;
-  timerDisplay.innerHTML = time_obj.fromMilliseconds((timesIn[0]+86400000-now)%86400000) + lang[settings.lang].ussa;
+  timerDisplay.innerHTML = time.fromMilliseconds((timesIn[0]+86400000-now)%86400000) + lang[settings.lang].ussa;
 
   for(let i = 0; i + 1 < timesIn.length; i++)
   {
     if((now > timesIn[i]) && (now < timesIn[i + 1]))
     {
       periodDisplay.innerHTML = periodsIn[i][settings.lang];
-      timerDisplay.innerHTML = time_obj.fromMilliseconds(timesIn[i + 1]-now) + ending;
+      timerDisplay.innerHTML = time.fromMilliseconds(timesIn[i + 1]-now) + ending;
     }
   }
 }
-function think()
+function doTimerControl()
 {
-  const yes = new Date();
-  const timeOfWeek = Date.now() % 604800000;
-  const timeOfDay = Date.now() % 86400000;
-  const isWeekend = ((time_obj.ofWeek(15, 00, 00, 1) < timeOfWeek) && (timeOfWeek < time_obj.ofWeek(7, 50, 1, 4)));
+  const yes = new Date(Date.now + time.testingOffset);
+  const timeOfWeek = (Date.now() + time.testingOffset) % 604800000;
+  const timeOfDay = (Date.now() + time.testingOffset) % 86400000;
+  const isWeekend = ((time.ofWeek(15,  0,  0, 1) < timeOfWeek) && (timeOfWeek < time.ofWeek(7, 50, 1, 4)));
   let isSummer = ((yes.getMonth() >= 4) && (yes.getMonth() <= 7));
   //                   August               the 8th                    May                 the 23rd
   if ((yes.getMonth() == 7 && yes.getDate() >= 8) || (yes.getMonth() == 4 && yes.getDate() <= 23))
@@ -377,169 +173,63 @@ function think()
     {
       if (settings.schedule === 0)
       {
-        updateTimer(times.assembly[settings.grade], stuff.assembly[settings.grade]);
+        updateTimer(scheduleData.times.assembly[settings.grade], scheduleData.names.assembly[settings.grade]);
       }
       else if(settings.schedule === 1)
       { //                        Is middle school        Is Monday                          Block schedule
-        updateTimer(times.normal[settings.grade < 3 || yes.getDay() == 1 ? settings.grade : settings.grade + 2],
+        updateTimer(scheduleData.times.normal[settings.grade < 3 || yes.getDay() == 1 ? settings.grade : settings.grade + 2],
         //                                                                                    Is Tuesday or Thursday                 Even block schedule  Odd block schedule
-                    stuff.normal[settings.grade < 3 || yes.getDay() == 1 ? settings.grade : yes.getDay() == 2 || yes.getDay() == 4 ? settings.grade + 4 : settings.grade + 2]);
+                    scheduleData.names.normal[settings.grade < 3 || yes.getDay() == 1 ? settings.grade : yes.getDay() == 2 || yes.getDay() == 4 ? settings.grade + 4 : settings.grade + 2]);
       }
       else
       {
-        updateTimer(times.test[settings.grade], stuff.test[settings.grade]);
+        updateTimer(scheduleData.times.test[settings.grade], scheduleData.names.test[settings.grade]);
       }
     }
     else
     {
       periodDisplay.innerHTML = lang[settings.lang].learnt;
-      timerDisplay.innerHTML = time_obj.fromMilliseconds(time_obj.ofWeek(7, 50, 0, 4)-timeOfWeek) + lang[settings.lang].ussa;
+      timerDisplay.innerHTML = time.fromMilliseconds(time.ofWeek(7, 50, 0, 4)-timeOfWeek) + lang[settings.lang].ussa;
     }
   }
   else if(!settings.paused)
   {
     periodDisplay.innerHTML = lang[settings.lang].summer;
     const dayIfNecessary = settings.grade ? 86400000 : 0
-    timerDisplay.innerHTML = time_obj.fromMilliseconds(Number(new Date("Aug 8, 2023 07:50:00")) - Number(yes) + dayIfNecessary) + lang[settings.lang].ussa;
+    timerDisplay.innerHTML = time.fromMilliseconds(Number(new Date("Aug 8, 2023 07:50:00")) - Number(yes) + dayIfNecessary) + lang[settings.lang].ussa;
   }
-  functions_general.update.darkMode();
+  update("dark mode");
 }
-function tdm()
-{
-  if (!settings.shifting)
-  {
-    settings.darkMode++;
-  }
-  else
-  {
-    settings.darkMode--;
-  }
-  if (settings.darkMode < 0)
-  {
-    settings.darkMode += 3;
-  }
-  settings.darkMode %= 3;
-  functions_general.update.darkMode();
-}
-document.addEventListener("keyup", () => {
 
-  let evt = window.event;
-  let code = evt.code;
-
-  switch (code)
-  {
-    case "Digit6": // set to 6th grade schedule
-      settings.grade = 0;
-      break;
-    case "Digit7": // set to 7th grade schedule
-      settings.grade = 1;
-      break;
-    case "Digit8": // set to 8th grade schedule
-      settings.grade = 2;
-      break;
-    case "Digit9": // set to 8th grade schedule
-      settings.grade = 3;
-      break;
-    case "Digit0": // set to 8th grade schedule
-      settings.grade = 4;
-      break;
-    case "KeyT": // toggle testing schedule
-      testt();
-      break;
-    case "Space": // change background color
-      tdm();
-      break;
-    case "KeyI": // open image for background
-    if(!settings.shifting)
-    {
-      document.getElementsByTagName("input")[0].click();
-      document.getElementById("bgimg").style.display = "block";
-    }
-      break;
-    case "KeyR": // reset settings
-      settings =
-      {
-        schedule: 1,
-        darkMode: 1,
-        grade: 0,
-        flipped: false,
-        lang: 0,
-        textColor: 0,
-        paused: false,
-      };
-      resetImage();
-      break;
-    case "KeyE": // remove background image
-      resetImage();
-      break;
-    case "KeyU": // ukrainian mode
-      document.getElementById("bgimg").src = "a2.png";
-      document.getElementById("bgimg").style.display = "block";
-      functions_general.update.darkMode();
-      break;
-    case "KeyF": // change font
-      functions_general.cycleFonts();
-      break;
-    case "KeyA": // australian mode
-      periodDisplay.classList.toggle("flip");
-      timerDisplay.classList.toggle("flip");
-      non.classList.toggle("flip");
-      gradep.classList.toggle("flip");
-      document.getElementById("credits").classList.toggle("flip");
-      document.getElementById("bgimg").classList.toggle("flip");
-      break;
-    case "KeyP": // pause
-      settings.paused = !settings.paused;
-      break;
-    case "KeyL": // language change
-      functions_general.langchange();
-      if (settings.schedule === 0)
-      {
-        document.getElementById("testing-toggle").innerHTML = lang[settings.lang].ytest;
-      }
-      else
-      {
-        document.getElementById("testing-toggle").innerHTML = lang[settings.lang].ntest;
-      }
-      document.getElementsByTagName("html")[0].lang = settings.lang == 0 ? "en" : settings.lang == 1 ? "es" : "fr";
-      document.getElementById("credits").innerHTML = settings.lang == 0 ? "By Benjamin Harris" : settings.lang == 1 ? "Por Benjamin Harris" : "Par Benjamin Harris"
-      break;
-    case "ShiftLeft": // Stop shifting
-    case "ShiftRight":
-      settings.shifting = false;
-      break;
-    case "KeyC": // change text color; cycle between white, black and opposite
-      functions_general.textColorChange();
-      break;
-  }
-  functions_general.update.grade();
-});
-document.addEventListener("keydown", () => {
-
-  let evt = window.event;
-  let code = evt.code;
-  switch(code)
-  {
-    case "ShiftLeft": // Start shifting
-    case "ShiftRight":
-      settings.shifting = true;
-      break;
-  }
-});
 function handleImage(event)
 {
   let output = document.getElementById("bgimg");
   output.src = URL.createObjectURL(event.target.files[0]);
 }
-think();
-functions_general.update.darkMode();
 
-function openHotkeys()
+function openHotkeys(e)
 {
   document.getElementById("hotkey-screen").style.display = "block";
 }
-function closeHotkeys()
+function closeHotkeys(e)
 {
   document.getElementById("hotkey-screen").style.display = "none";
 }
-setInterval(think, 1000/8);
+
+
+/**
+ * @returns {void}
+ */
+function main()
+{
+  doTimerControl();
+  update("dark mode");
+  setInterval(doTimerControl, 1000/9);
+  document.getElementById("hotkey-button").onclick = openHotkeys;
+  document.getElementById("close-hotkeys").onclick = closeHotkeys;
+  document.getElementById("image-selector").onchange = handleImage;
+  document.addEventListener("keyup", keys.handleKeyUp);
+  document.addEventListener("keydown", keys.handleKeyDown);
+}
+
+main();

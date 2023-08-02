@@ -1,5 +1,5 @@
-const testOffset = 0;// forward offset, in hours
-const time_obj = {
+const testOffset = 86400_000 * 7.75;// forward offset, in hours
+export default {
 
     /**
     * Returns the date value mod 86400 seconds of the hour, minute, and seconds
@@ -76,20 +76,20 @@ const time_obj = {
       }
       if (unit == "minutes")
       {
-        return Math.floor(seconds/60) + ":" + zeroify(seconds%60);
+        return Math.floor(seconds/60) + ":" + this.zeroify(seconds%60);
       }
       else if (unit == "hours")
       {
-        return Math.floor(seconds/3600) + ":" + zeroify(Math.floor(seconds/60)%60) + ":" + zeroify(seconds%60);
+        return Math.floor(seconds/3600) + ":" + this.zeroify(Math.floor(seconds/60)%60) + ":" + this.zeroify(seconds%60);
       }
       else if (unit == "days")
       {
-        return Math.floor(seconds/86400) + ":" + zeroify(Math.floor(seconds/3600)%24) + ":" + zeroify(Math.floor(seconds/60)%60) + ":" + zeroify(seconds%60);
+        return Math.floor(seconds/86400) + ":" + this.zeroify(Math.floor(seconds/3600)%24) + ":" + this.zeroify(Math.floor(seconds/60)%60) + ":" + this.zeroify(seconds%60);
       }
     },
     fromMilliseconds(ms, unit = "auto")
     {
-      seconds = Math.round(ms/1000);
+      const seconds = Math.round(ms/1000);
       if (unit == "auto")
       {
         if (seconds >= 86400)
@@ -107,15 +107,26 @@ const time_obj = {
       }
       if (unit == "minutes")
       {
-        return Math.floor(seconds/60) + ":" + zeroify(seconds%60);
+        return Math.floor(seconds/60) + ":" + this.zeroify(seconds%60);
       }
       else if (unit == "hours")
       {
-        return Math.floor(seconds/3600) + ":" + zeroify(Math.floor(seconds/60)%60) + ":" + zeroify(seconds%60);
+        return Math.floor(seconds/3600) + ":" + this.zeroify(Math.floor(seconds/60)%60) + ":" + this.zeroify(seconds%60);
       }
       else if (unit == "days")
       {
-        return Math.floor(seconds/86400) + ":" + zeroify(Math.floor(seconds/3600)%24) + ":" + zeroify(Math.floor(seconds/60)%60) + ":" + zeroify(seconds%60);
+        return Math.floor(seconds/86400) + ":" + this.zeroify(Math.floor(seconds/3600)%24) + ":" + this.zeroify(Math.floor(seconds/60)%60) + ":" + this.zeroify(seconds%60);
       }
-    }
+    },
+    zeroify(num, digits = 2)
+    {
+      let nums = num.toString(10);
+      const an = digits - (nums.length);
+      for (let j = 0; j < an; j++)
+      {
+        nums = "0" + nums;
+      }
+      return nums;
+    },
+    testingOffset: testOffset,
   };
