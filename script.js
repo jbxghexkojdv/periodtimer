@@ -230,6 +230,8 @@ function main()
   document.getElementById("image-selector").onchange = handleImage;
   document.addEventListener("keyup", keys.handleKeyUp);
   document.addEventListener("keydown", keys.handleKeyDown);
+  testingButton.onclick = keys.scheduleToggle;
+  gradeButton.onclick = userStyling.gradechange;
 }
 
 main();

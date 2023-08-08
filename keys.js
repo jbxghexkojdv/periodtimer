@@ -177,5 +177,6 @@ export default
       settings.shifting = true;
       main.setSettings(settings);
     }
-  }
+  },
+  scheduleToggle: scheduleToggle
 };
