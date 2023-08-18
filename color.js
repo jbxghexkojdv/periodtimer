@@ -41,7 +41,7 @@ export default
         b = 255-theWayThrough;
         break;
       default:
-        print("Something went wrong.");
+        console.log("Something went wrong.");
     }
     return `rgb(${r}, ${g}, ${b})`;
   },
