@@ -72,22 +72,25 @@ export default
     main.setStyleInfo("issue-link", "fontFamily", fonts[font_num]);
     main.setStyleInfo("hotkey-button", "fontFamily", fonts[font_num]);
   },
-  textColorChange()
+  textColorChange(change = true)
   {
     let settings = main.getSettings();
-    if (!settings.shifting)
+    if(change)
     {
-      settings.textColor++;
+      if (!settings.shifting)
+      {
+        settings.textColor++;
+      }
+      else
+      {
+        settings.textColor--;
+      }
+      if (settings.textColor < 0)
+      {
+        settings.textColor += 3;
+      }
+      settings.textColor %= 3;
     }
-    else
-    {
-      settings.textColor--;
-    }
-    if (settings.textColor < 0)
-    {
-      settings.textColor += 3;
-    }
-    settings.textColor %= 3;
     if(settings.textColor === 0)
     {
       main.setStyleInfo("period-display", "color", "#fff");
@@ -134,4 +137,19 @@ export default
       main.setStyleInfo("hotkey-button", "mixBlendMode", "normal");
     }
   },
+  flashRed()
+  {
+      main.setStyleInfo("period-display", "color", "#f00");
+      main.setStyleInfo("timer-display", "color", "#f00");
+      main.setStyleInfo("testing-toggle", "color", "#f00");
+      main.setStyleInfo("grade", "color", "#f00");
+      main.setStyleInfo("credits", "color", "#f00");
+      main.setStyleInfo("hotkey-button", "color", "#f00");
+      main.setStyleInfo("period-display", "mixBlendMode", "normal");
+      main.setStyleInfo("timer-display", "mixBlendMode", "normal");
+      main.setStyleInfo("testing-toggle", "mixBlendMode", "normal");
+      main.setStyleInfo("grade", "mixBlendMode", "normal");
+      main.setStyleInfo("credits", "mixBlendMode", "normal");
+      main.setStyleInfo("hotkey-button", "mixBlendMode", "normal");
+  }
 };

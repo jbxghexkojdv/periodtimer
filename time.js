@@ -1,14 +1,17 @@
-const testOffset = 0; // forward offset, in hours
+const testOffset = -12; // forward offset in hours
 export default {
 
     /**
     * Returns the date value mod 86400 seconds of the hour, minute, and seconds
-    * @param {Number} h The hour, in local time
-    * @param {Number} m The minute, in local time
+    * @param {string} time The time in military time
     */
-    ofDay(h, m, s = 0)
+    ofDay(time)
     {
-      let retval = ((((((h+(new Date().getTimezoneOffset()/60)-testOffset)*60)+m)*60)+s)*1000)%86400000;
+      const arr = time.split(":");
+      const h = parseInt(arr[0]);
+      const m = parseInt(arr[1]);
+      const s = arr.length > 2 ? parseInt(arr[2]) : 0;
+      let retval = ((((((h+(new Date().getTimezoneOffset()/60))*60)+m)*60)+s)*1000)%86400000;
       while(true)
       {
         if(retval >= 0)

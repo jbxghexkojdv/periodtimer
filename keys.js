@@ -89,59 +89,33 @@ export default
       case "Digit8": // set to 8th grade schedule
         settings.grade = 2;
         break;
-      case "Digit9": // set to 8th grade schedule
+      case "Digit9": // set to THS 1st lunch schedule
         settings.grade = 3;
         break;
-      case "Digit0": // set to 8th grade schedule
+        case "Digit0": // set to THS 2nd lunch schedule
         settings.grade = 4;
         break;
-      case "KeyT": // toggle testing schedule
-        scheduleToggle();
+      case "KeyA": // australian mode
+        main.australian();
         break;
-      case "Space": // change background color
-        toggleDarkMode();
+      case "KeyB": // change background color
+        main.setBackgroundColor();
         break;
-      case "KeyI": // open image for background
-      if(!settings.shifting)
-      {
-        document.getElementsByTagName("input")[0].click();
-        document.getElementById("bgimg").style.display = "block";
-      }
-        break;
-      case "KeyR": // reset settings
-        window.settings =
-        {
-          schedule: 1,
-          darkMode: 1,
-          grade: 0,
-          flipped: false,
-          lang: 0,
-          textColor: 0,
-          paused: false,
-        };
-        resetImage();
+      case "KeyC": // change text color; cycle between white, black and opposite
+        userStyling.textColorChange();
         break;
       case "KeyE": // remove background image
         resetImage();
         break;
-      case "KeyU": // ukrainian mode
-        document.getElementById("bgimg").src = "a2.png";
-        document.getElementById("bgimg").style.display = "block";
-        update("dark mode");
-        break;
       case "KeyF": // change font
         userStyling.cycleFonts();
         break;
-      case "KeyA": // australian mode
-        periodDisplay.classList.toggle("flip");
-        timerDisplay.classList.toggle("flip");
-        non.classList.toggle("flip");
-        gradep.classList.toggle("flip");
-        document.getElementById("credits").classList.toggle("flip");
-        document.getElementById("bgimg").classList.toggle("flip");
-        break;
-      case "KeyP": // pause
-        settings.paused = !settings.paused;
+      case "KeyI": // open image for background
+        if(!settings.shifting)
+        {
+          document.getElementsByTagName("input")[0].click();
+          document.getElementById("bgimg").style.display = "block";
+        }
         break;
       case "KeyL": // language change
         userStyling.langchange();
@@ -156,12 +130,48 @@ export default
         document.getElementsByTagName("html")[0].lang = settings.lang == 0 ? "en" : settings.lang == 1 ? "es" : "fr";
         document.getElementById("credits").innerHTML = settings.lang == 0 ? "By Benjamin Harris" : settings.lang == 1 ? "Por Benjamin Harris" : "Par Benjamin Harris"
         break;
+      case "KeyM": // insert schedule
+        if(!settings.shifting)
+        {
+          document.getElementsByTagName("input")[1].click();
+          const file = document.getElementsByTagName("input")[1].files[0];
+        }
+        break;
+      case "KeyN": // stop using schedule
+        settings.useCustomSchedule = false;
+        break;
+      case "KeyP": // pause
+        settings.paused = !settings.paused;
+        break;
+      case "KeyR": // reset settings
+        main.setSettings(
+        {
+          schedule: 1,
+          darkMode: 1,
+          grade: 0,
+          flipped: false,
+          lang: 0,
+          textColor: 0,
+          paused: false,
+          customSchedule: {},
+          useCustomSchedule: false,
+        });
+        resetImage();
+        break;
+      case "KeyT": // toggle testing schedule
+        scheduleToggle();
+        break;
+      case "KeyU": // ukrainian mode
+        document.getElementById("bgimg").src = "a2.png";
+        document.getElementById("bgimg").style.display = "block";
+        update("dark mode");
+        break;
+      case "Space": // change background color
+        toggleDarkMode();
+        break;
       case "ShiftLeft": // Stop shifting
       case "ShiftRight":
         settings.shifting = false;
-        break;
-      case "KeyC": // change text color; cycle between white, black and opposite
-        userStyling.textColorChange();
         break;
     }
     update("grade");

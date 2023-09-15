@@ -47,7 +47,7 @@ function update(subject)
     else if(main.getElementInsides("period-display") == lang[settings.lang].learnt || main.getElementInsides("period-display") == lang[settings.lang].summer)
     {
       const isWeekend = ((time.ofWeek(14, 44, 59, 1) < (Date.now()%604800000)) && ((Date.now()%604800000) < time.ofWeek(7, 45, 1, 4)));
-      const timeUntilSchool = isWeekend ? (time.ofWeek(7, 45, 1, 4)-(Date.now()%604800000)) : ((time.ofDay(7, 45, 1)+86400000)-(Date.now()%86400000))%86400000;
+      const timeUntilSchool = isWeekend ? (time.ofWeek(7, 45, 0, 4)-(Date.now()%604800000)) : ((time.ofDay("07:45")+86400000)-(Date.now()%86400000))%86400000;
       const TUSFraction = isWeekend && (timeUntilSchool > 0) ? 1-((timeUntilSchool+230700000)/461400000) : 1-((timeUntilSchool/*+57900000*/)/115800000);
       const bgColor = color.toHue(color.decimalToColor(TUSFraction));
       window.document.body.style.backgroundColor = bgColor;

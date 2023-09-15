@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Period Timer v1.15.43</title>
+    <title>Period Timer v1.16</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
     <link rel="icon" href="../img/logo_small.png" type="image/png" />
     <meta name="viewport" content="width=device-width" />
@@ -18,8 +18,10 @@
       <button id="grade">RMS 6</button>
       <button id="hotkey-button">Hotkeys</button>
       <p id="debug-element"></p>
-      <input type="file" id="image-selector">
-      <img id="bgimg" alt="background image">
+      <input type="file" id="image-selector" />
+      <input type="file" id="schedule-maker" />
+      <input type="color" id="background-color" />
+      <img id="bgimg" alt="background image" />
     </div>
     <div id="hotkey-screen">
       <p id="hotkey-display">
@@ -28,12 +30,16 @@
         8 - Sets the timer to the 8th grade schedule<br />
         9 - Sets the timer to the THS 1st lunch schedule<br />
         0 - Sets the timer to the THS 2nd lunch schedule<br />
+        B - Allows you to set a custom background color<br />
         C - Cycles through text colors, options are opposite of background, white, and black<br />
         E - Removes background image<br />
         F - Cycles through fonts; Shift reverses it<br />
         I - Opens image for background; Shift blocks it<br />
+        M - Allows you to add your own custom schedule, <a href="EVENTUALLY, it's not here yet">documentation</a> will exist eventually, <a href="./test.json">example</a> for now<br />
+        N - Switches away from the custom schedule<br />
         L - Cycles through languages; Shift reverses it<br />
         P - Pauses the timer<br />
+        R - Resets EVERYTHING<br />
         T - Cycles through schedules; Shift reverses it<br />
         Space - Cycles through color schemes, options are dark, light, and colorful, Shift reverses it, it does not apply to this screen<br />
       </p>
