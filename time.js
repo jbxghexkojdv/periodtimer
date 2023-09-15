@@ -1,4 +1,4 @@
-const testOffset = -12; // forward offset in hours
+const testOffset = 0; // forward offset in hours
 export default {
 
     /**
