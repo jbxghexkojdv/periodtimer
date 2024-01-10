@@ -211,13 +211,13 @@ function doTimerControl()
         updateTimer(scheduleData.times.assembly[settings.grade], scheduleData.names.assembly[settings.grade]);
       }
       else if(settings.schedule === 1)
-      { //                                    Is middle school        Is Monday                          Block schedule
+      { //                                    Is middle school        Is Wednesday or Thursday              Block schedule
         // debugger;
-        updateTimer(scheduleData.times.normal[settings.grade < 3 || yes.getDay() == 1 ? settings.grade : settings.grade + 2],
+        updateTimer(scheduleData.times.normal[!(settings.grade < 3) || (yes.getDay() == 3 || yes.getDay() == 4) ? settings.grade + 2 : settings.grade],
         //                                                                                                 Is Tuesday or Thursday                 Even block schedule  Odd block schedule
-                    scheduleData.names.normal[settings.grade < 3 || yes.getDay() == 1 ? settings.grade : yes.getDay() == 2 || yes.getDay() == 4 ? settings.grade + 4 : settings.grade + 2],
+                    scheduleData.names.normal[!(settings.grade < 3) || (yes.getDay() == 3 || yes.getDay() == 4) ? ( yes.getDay() == 2 || yes.getDay() == 4 ? settings.grade + 4 : settings.grade + 2) : settings.grade],
                     settings.grade > 2,
-                    scheduleData.passing.normal[settings.grade < 3 || yes.getDay == 1 ? settings.grade : settings.grade + 2]);
+                    scheduleData.passing.normal[!(settings.grade < 3) || (yes.getDay() == 3 || yes.getDay() == 4) ? settings.grade + 2 : settings.grade]);
       }
       else
       {
