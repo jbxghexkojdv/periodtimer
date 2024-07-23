@@ -553,7 +553,7 @@ const mainModule =
 
 // Constants
 const fonts = ["Helvetica", "Georgia", "Cursive", "Verdana", "Courier New"];
-const testOffset = 520; // forward offset in hours
+const testOffset = 0; // forward offset in hours
 
 const lang = [
   {//English
