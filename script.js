@@ -65,42 +65,42 @@ const scheduleData = {
                 "14:03", "14:45", // P8 8
               ],
               [// Start    End
-                "07:55", "08:40", // P1 1 THS
-                "08:45", "09:30", // P2 1 THS
-                "09:35", "10:20", // P3 1 THS
-                "10:25", "11:10", // P4 1 THS
-             /*Teleport*/"11:40", // Lu 1 THS
-                "11:45", "12:30", // P5 1 THS
-                "12:35", "13:20", // P6 1 THS
-                "13:25", "14:10", // P7 1 THS
-                "14:15", "15:00", // P8 1 THS
+                "07:55", "08:42", // P1 1 THS
+                "08:47", "09:34", // P2 1 THS
+                "09:39", "10:26", // P3 1 THS
+                "10:31", "11:02", // TT 1 THS
+                "11:07", "11:54", // P4 1 THS
+             /*Teleport*/"12:24", // Lu 1 THS
+                "12:29", "13:16", // P5 1 THS
+                "13:21", "14:08", // P6 1 THS
+                "14:13", "15:00", // P7 1 THS
               ],
               [// Start    End
-                "07:55", "08:40", // P1 2 THS
-                "08:45", "09:30", // P2 2 THS
-                "09:35", "10:20", // P3 2 THS
-                "10:25", "11:10", // P4 2 THS
-                "11:15", "12:00", // P5 2 THS
-             /*Teleport*/"12:30", // Lu 2 THS
-                "12:35", "13:20", // P6 2 THS
-                "13:25", "14:10", // P7 2 THS
-                "14:15", "15:00", // P8 2 THS
+                "07:55", "08:42", // P1 1 THS
+                "08:47", "09:34", // P2 1 THS
+                "09:39", "10:26", // P3 1 THS
+                "10:31", "11:02", // TT 1 THS
+                "11:07", "11:54", // P4 1 THS
+                "11:59", "12:46", // P5 1 THS
+             /*Teleport*/"13:16", // Lu 1 THS
+                "13:21", "14:08", // P6 1 THS
+                "14:13", "15:00", // P7 1 THS
               ],
               [// Start    End
-                "07:55", "09:18", // P1/2 1 THS BLOCK
-                "09:23", "10:06", // TrTi 1 THS BLOCK
-                "10:11", "11:34", // P3/4 1 THS BLOCK
-             /*Teleport*/"12:04", // Lunc 1 THS BLOCK
-                "12:09", "13:32", // P5/6 1 THS BLOCK
-                "13:37", "15:00", // P7/8 1 THS BLOCK
+                "07:55", "09:30", // P1/2 1 THS BLOCK
+                "09:35", "10:22", // P3   1 THS BLOCK
+                "10:27", "11:10", // TrTi 1 THS BLOCK
+             /*Teleport*/"11:40", // Lunc 1 THS BLOCK
+                "11:45", "13:20", // P4/5 1 THS BLOCK
+                "13:25", "15:00", // P6/7 1 THS BLOCK
               ],
               [// Start    End
-                "07:55", "09:18", // P1/2 2 THS BLOCK
-                "09:23", "10:06", // TrTi 2 THS BLOCK
-                "10:11", "11:34", // P3/4 2 THS BLOCK
-                "11:39", "13:02", // P5/6 2 THS BLOCK
-             /*Teleport*/"13:32", // Lunc 2 THS BLOCK
-                "13:37", "15:00", // P7/8 2 THS BLOCK
+                "07:55", "09:30", // P1/2 1 THS BLOCK
+                "09:35", "10:22", // P3   1 THS BLOCK
+                "10:27", "11:10", // TrTi 1 THS BLOCK
+                "11:15", "12:50", // P4/5 1 THS BLOCK
+             /*Teleport*/"13:20", // Lunc 1 THS BLOCK
+                "13:25", "15:00", // P6/7 1 THS BLOCK
               ]
             ],
     test:   [
@@ -552,8 +552,8 @@ const mainModule =
 };
 
 // Constants
-const fonts = ["Helvetica", "Georgia", "Cursive", "Verdana", "Courier New"];
-const testOffset = 0; // forward offset in hours
+const fonts = ["Helvetica", "Georgia", "Cursive", "Verdana", "Consolas"];
+const testOffset = (0); // forward offset in hours
 
 const lang = [
   {//English
@@ -1308,7 +1308,7 @@ function doTimerControl()
     {
       periodDisplay.innerHTML = lang[settings.lang].summer;
       const dayIfNecessary = settings.grade ? 86400000 : 0
-      timerDisplay.innerHTML = time.fromMilliseconds(Number(new Date("Aug 8, 2023 07:50:00")) - Number(yes) + dayIfNecessary) + lang[settings.lang].ussa;
+      timerDisplay.innerHTML = time.fromMilliseconds(Number(new Date("12 Aug 2024 07:50:00")) - Number(yes) + dayIfNecessary) + lang[settings.lang].ussa;
     }
     update("dark mode");
 }
