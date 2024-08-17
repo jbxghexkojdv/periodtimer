@@ -656,7 +656,7 @@ const mainModule =
 };
 
 // Constants
-const fonts = ["Helvetica", "Georgia", "Cursive", "Verdana", "Consolas"];
+const fonts = ["Helvetica", "Georgia", "Cursive", "Verdana", "Consolas Cousine monospace"];
 const testOffset = (0); // forward offset in hours
 
 const lang = [
