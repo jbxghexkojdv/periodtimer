@@ -9,7 +9,7 @@ let gradeButton = document.getElementById("grade");
 function mobileCheck() 
 {
   return screen.width < screen.height;
-};
+}
 
 let settings = 
 {
@@ -117,7 +117,7 @@ const scheduleData = {
                   "10:31", "11:02", // TT 2 THS
                   "11:07", "11:54", // P4 2 THS
                   "11:59", "12:46", // P5 2 THS
-              /*Teleport*/"13:16", // Lu 2 THS
+               /*Teleport*/"13:16", // Lu 2 THS
                   "13:21", "14:08", // P6 2 THS
                   "14:13", "15:00", // P7 2 THS
                 ],
@@ -126,7 +126,7 @@ const scheduleData = {
                   "09:35", "10:22", // P3   2 THS BLOCK
                   "10:27", "11:10", // TrTi 2 THS BLOCK
                   "11:15", "12:50", // P4/5 2 THS BLOCK
-              /*Teleport*/"13:20", // Lunc 2 THS BLOCK
+               /*Teleport*/"13:20", // Lunc 2 THS BLOCK
                   "13:25", "15:00", // P6/7 2 THS BLOCK
                 ],
                 wednesday: [// Start, End
@@ -134,7 +134,7 @@ const scheduleData = {
                   "09:35", "10:22", // P3   2 THS BLOCK
                   "10:27", "11:10", // TrTi 2 THS BLOCK
                   "11:15", "12:50", // P4/5 2 THS BLOCK
-              /*Teleport*/"13:20", // Lunc 2 THS BLOCK
+               /*Teleport*/"13:20", // Lunc 2 THS BLOCK
                   "13:25", "15:00", // P6/7 2 THS BLOCK
                 ],
                 thursday: [// Start, End
@@ -142,7 +142,7 @@ const scheduleData = {
                   "09:35", "10:22", // P3   2 THS BLOCK
                   "10:27", "11:10", // TrTi 2 THS BLOCK
                   "11:15", "12:50", // P4/5 2 THS BLOCK
-              /*Teleport*/"13:20", // Lunc 2 THS BLOCK
+               /*Teleport*/"13:20", // Lunc 2 THS BLOCK
                   "13:25", "15:00", // P6/7 2 THS BLOCK
                 ],
                 friday: [// Start, End
@@ -150,7 +150,7 @@ const scheduleData = {
                   "09:35", "10:22", // P3   2 THS BLOCK
                   "10:27", "11:10", // TrTi 2 THS BLOCK
                   "11:15", "12:50", // P4/5 2 THS BLOCK
-              /*Teleport*/"13:20", // Lunc 2 THS BLOCK
+               /*Teleport*/"13:20", // Lunc 2 THS BLOCK
                   "13:25", "15:00", // P6/7 2 THS BLOCK
                 ],
               }
@@ -237,197 +237,197 @@ const scheduleData = {
               [ // 6
                 ["AB", "BC", "BC"],
                 ["AB-1"],
-                ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
                 ["1-2", "1-2", "1-2"],
-                ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                 ["2-3", "2-3", "2-3"],
-                ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                 ["3-4", "3-4", "3-4"],
-                ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                 ["Lunch", "Almuerzo", "Déjeuner"],
                 ["Lunch-5", "Almuerzo-5", "Déjeuner-5"],
-                ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                 ["5-6", "5-6", "5-6"],
-                ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ["6-7", "6-7", "6-7"],
-                ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ["7-8", "7-8", "7-8"],
-                ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
+                ["8<sup>th</sup> period", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
               ],
               [ // 7
                 ["AB", "BC", "BC"],
                 ["AB-1"],
-                ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
                 ["1-2", "1-2", "1-2"],
-                ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                 ["2-3", "2-3", "2-3"],
-                ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                 ["3-4", "3-4", "3-4"],
-                ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                 ["4-5", "4-5", "4-5"],
-                ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                 ["Lunch", "Almuerzo", "Déjeuner"],
                 ["Lunch-6", "Almuerzo-6", "Déjeuner-6"],
-                ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ["6-7", "6-7", "6-7"],
-                ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ["7-8", "7-8", "7-8"],
-                ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
+                ["8<sup>th</sup> period", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
               ],
               [ // 8
                 ["AB", "BC", "BC"],
                 ["AB-1"],
-                ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
                 ["1-2", "1-2", "1-2"],
-                ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                 ["2-3", "2-3", "2-3"],
-                ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                 ["3-4", "3-4", "3-4"],
-                ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                 ["4-5", "4-5", "4-5"],
-                ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                 ["5-6", "5-6", "5-6"],
-                ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ["Lunch", "Almuerzo", "Déjeuner"],
                 ["Lunch-7", "Almuerzo-7", "Déjeuner-7"],
-                ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ["7-8", "7-8", "7-8"],
-                ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
+                ["8<sup>th</sup> period", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
               ],
               {
                 monday: [ // THS 1
-                  ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                  ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
                   ["1-2", "1-2", "1-2"],
-                  ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                  ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                   ["2-3", "2-3", "2-3"],
-                  ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-TT", "3-TT", "3-TT"],
                   ["Tro. Time", "Tiem. Tro.", "Tem. Tro."],
                   ["TT-4", "TT-4", "TT-4"],
-                  ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                  ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-5", "Almuerzo-5", "Déjeuner-5"],
-                  ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                  ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                   ["5-6", "5-6", "5-6"],
-                  ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                  ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                   ["6-7", "6-7", "6-7"],
-                  ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                  ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ],
                 tuesday: [ // THS 1 EVEN BLOCK
-                  ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                  ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                   ["2-3", "2-3", "2-3"],
-                  ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-TT", "3-TT", "3-TT"],
                   ["Tro. Time", "Tro. Time", "Tro. Time"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-4", "Almuerzo-4", "Déjeuner-4"],
-                  ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                  ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                   ["4-6", "4-6", "4-6"],
-                  ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                  ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ],
                 wednesday: [ // THS 1 ODD BLOCK
-                  ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>e</sup> cours"],
+                  ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>e</sup> cours"],
                   ["1-3", "1-3", "1-3"],
-                  ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-Tro. Time", "3-Tiem. Tro.", "3-Tem. Tro."],
                   ["Tro. Time", "Tro. Time", "Tro. Time"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-5", "Almuerzo-5", "Déjeuner-5"],
-                  ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                  ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                   ["5-7", "5-7", "5-7"],
-                  ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                  ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ],
                 thursday: [ // THS 1 EVEN BLOCK
-                  ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                  ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                   ["2-3", "2-3", "2-3"],
-                  ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-Tro. Time", "3-Tiem. Tro.", "3-Tem. Tro."],
                   ["Tro. Time", "Tro. Time", "Tro. Time"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-4", "Almuerzo-4", "Déjeuner-4"],
-                  ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                  ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                   ["4-6", "4-6", "4-6"],
-                  ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                  ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ],
                 friday: [ // THS 1 ODD BLOCK
-                  ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                  ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
                   ["1-Tro. Time", "1-Tiem. Tro.", "1-Tem. Tro."],
                   ["Tro. Time", "Tiem. Tro.", "Tem. Tro."],
                   ["Tro. Time-3", "Tiem. Tro.-3", "Tem. Tro.-3"],
-                  ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-5", "Almuerzo-5", "Déjeuner-5"],
-                  ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                  ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                   ["5-7", "5-7", "5-7"],
-                  ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                  ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ]
               },
               {
                 monday: [ // THS 2
-                  ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                  ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
                   ["1-2", "1-2", "1-2"],
-                  ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                  ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                   ["2-3", "2-3", "2-3"],
-                  ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-TT", "3-TT", "3-TT"],
                   ["Tro. Time", "Tiem. Tro.", "Tem. Tro."],
                   ["TT-4", "TT-4", "TT-4"],
-                  ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                  ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                   ["4-5", "4-5", "4-5"],
-                  ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                  ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-6", "Almuerzo-6", "Déjeuner-6"],
-                  ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                  ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                   ["6-7", "6-7", "6-7"],
-                  ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                  ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ],
                 tuesday: [ // THS 2 EVEN BLOCK
-                  ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                  ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                   ["2-3", "2-3", "2-3"],
-                  ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-TT", "3-TT", "3-TT"],
                   ["Tro. Time", "Tro. Time", "Tro. Time"],
                   ["TT-4", "TT-4", "TT-4"],
-                  ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                  ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-6", "Almuerzo-6", "Déjeuner-6"],
-                  ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                  ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ],
                 wednesday: [ // THS 2 ODD BLOCK
-                  ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>e</sup> cours"],
+                  ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>e</sup> cours"],
                   ["1-3", "1-3", "1-3"],
-                  ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-Tro. Time", "3-Tiem. Tro.", "3-Tem. Tro."],
                   ["Tro. Time", "Tro. Time", "Tro. Time"],
                   ["TT-5", "TT-5", "TT-5"],
-                  ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                  ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-7", "Almuerzo-7", "Déjeuner-7"],
-                  ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                  ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ],
                 thursday: [ // THS 2 EVEN BLOCK
-                  ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                  ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                   ["2-3", "2-3", "2-3"],
-                  ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-TT", "3-TT", "3-TT"],
                   ["Tro. Time", "Tro. Time", "Tro. Time"],
                   ["TT-4", "TT-4", "TT-4"],
-                  ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                  ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-6", "Almuerzo-6", "Déjeuner-6"],
-                  ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                  ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ],
                 friday: [ // THS 2 ODD BLOCK
-                  ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>e</sup> cours"],
+                  ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>e</sup> cours"],
                   ["1-3", "1-3", "1-3"],
-                  ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-Tro. Time", "3-Tiem. Tro.", "3-Tem. Tro."],
                   ["Tro. Time", "Tro. Time", "Tro. Time"],
                   ["TT-5", "TT-5", "TT-5"],
-                  ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                  ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-7", "Almuerzo-7", "Déjeuner-7"],
-                  ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                  ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ]
               },
             ],
@@ -435,124 +435,124 @@ const scheduleData = {
               [ // 6
                 ["AB", "BC", "BC"],
                 ["AB-1"],
-                ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
                 ["1-2", "1-2", "1-2"],
-                ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                 ["2-3", "2-3", "2-3"],
-                ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                 ["Lunch", "Almuerzo", "Déjeuner"],
                 ["Lunch-4", "Almuerzo-4", "Déjeuner-4"],
-                ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                 ["4-5", "4-5", "4-5"],
-                ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                 ["5-6", "5-6", "5-6"],
-                ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ["6-7", "6-7", "6-7"],
-                ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ["7-8", "7-8", "7-8"],
-                ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
+                ["8<sup>th</sup> period", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
             ],
             [ // 7
                 ["AB", "BC", "BC"],
                 ["AB-1"],
-                ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
                 ["1-2", "1-2", "1-2"],
-                ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                 ["2-3", "2-3", "2-3"],
-                ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                 ["3-4", "3-4", "3-4"],
-                ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                 ["Lunch", "Almuerzo", "Déjeuner"],
                 ["Lunch-5", "Almuerzo-5", "Déjeuner-5"],
-                ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                 ["5-6", "5-6", "5-6"],
-                ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ["6-7", "6-7", "6-7"],
-                ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ["7-8", "7-8", "7-8"],
-                ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
+                ["8<sup>th</sup> period", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
             ],
             [ // 8
                 ["AB", "BC", "BC"],
                 ["AB-1"],
-                ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
                 ["1-2", "1-2", "1-2"],
-                ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                 ["2-3", "2-3", "2-3"],
-                ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                 ["3-4", "3-4", "3-4"],
-                ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                 ["4-5", "4-5", "4-5"],
-                ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                 ["Lunch", "Almuerzo", "Déjeuner"],
                 ["Lunch-6", "Almuerzo-6", "Déjeuner-6"],
-                ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ["6-7", "6-7", "6-7"],
-                ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ["7-8", "7-8", "7-8"],
-                ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
+                ["8<sup>th</sup> period", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
               ]
             ],
   assembly: [
               [ // 6
                 ["Assembly", "Reunión", "Réunion"],
                 ["Ass.-1"],
-                ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
                 ["1-2", "1-2", "1-2"],
-                ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                 ["2-3", "2-3", "2-3"],
-                ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                 ["3-4", "3-4", "3-4"],
-                ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                 ["Lunch", "Almuerzo", "Déjeuner"],
                 ["Lunch-5", "Almuerzo-5", "Déjeuner-5"],
-                ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                 ["5-6", "5-6", "5-6"],
-                ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ["6-7", "6-7", "6-7"],
-                ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ["7-8", "7-8", "7-8"],
-                ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
+                ["8<sup>th</sup> period", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
               ],
               [ // 7
-                ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
                 ["1-2", "1-2", "1-2"],
-                ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                 ["2-Ass.", "2-Reu.", "2-Réu."],
                 ["Assembly", "Reunión", "Réunion"],
                 ["Ass.-3"],
-                ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                 ["3-4", "3-4", "3-4"],
-                ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                 ["4-5", "4-5", "4-5"],
-                ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                 ["Lunch", "Almuerzo", "Déjeuner"],
                 ["Lunch-6", "Almuerzo-6", "Déjeuner-6"],
-                ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ["6-7", "6-7", "6-7"],
-                ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ["7-8", "7-8", "7-8"],
-                ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
+                ["8<sup>th</sup> period", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
               ],
               [ // 8
-                ["1<sup>st</sup> hour", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
+                ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
                 ["1-2", "1-2", "1-2"],
-                ["2<sup>nd</sup> hour", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
+                ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                 ["2-3", "2-3", "2-3"],
-                ["3<sup>rd</sup> hour", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                 ["3-4", "3-4", "3-4"],
-                ["4<sup>th</sup> hour", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                 ["4-Ass.", "4-Reu.", "4-Réu."],
                 ["Assembly", "Reunión", "Réunion"],
                 ["Ass.-5", "Reu.-5", "Réu.-5"],
-                ["5<sup>th</sup> hour", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
+                ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                 ["5-6", "5-6", "5-6"],
-                ["6<sup>th</sup> hour", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
+                ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ["Lunch", "Almuerzo", "Déjeuner"],
                 ["Lunch-7", "Almuerzo-7", "Déjeuner-7"],
-                ["7<sup>th</sup> hour", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
+                ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ["7-8", "7-8", "7-8"],
-                ["8<sup>th</sup> hour", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
+                ["8<sup>th</sup> period", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
               ]
             ]
           },
@@ -656,8 +656,8 @@ const mainModule =
 };
 
 // Constants
-const fonts = ["Helvetica", "Georgia", "Cursive", "Verdana", "Consolas Cousine monospace"];
-const testOffset = (0); // forward offset in hours
+const fonts = ["Helvetica", "Georgia", "Cursive", "Verdana", "Consolas, Cousine, monospace"];
+const testOffset = 0; // forward offset in hours
 
 const lang = [
   {//English
@@ -1350,16 +1350,13 @@ function updateTimer(timesIn, periodsIn, flash = 0, passing = [])
     {
       periodDisplay.innerHTML = periodsIn[i][settings.lang];
       timerDisplay.innerHTML = time.fromMilliseconds(time.ofDay(timesIn[i + 1])-now) + ` ${settings.lang === 0 ? "remaining" : settings.lang === 1 ? "restante" : "restant"}${passing.includes(i) ? "" :  ("<br />" + Math.round((now-time.ofDay(timesIn[i]))*1000/(time.ofDay(timesIn[i+1])-time.ofDay(timesIn[i])))/10 + lang[settings.lang].dwtc)}${percentageString}`;
-      if (flash > 0 && passing.includes(i) && time.ofDay(timesIn[i + 1])-now < flash * 1000)
+      if (flash > 0 && passing.includes(i) && time.ofDay(timesIn[i + 1])-now < flash * 1000 && Math.round(Date.now()/1000) % 2 == 1)
       {
-        if (Math.round(Date.now()/1000) % 2 == 1)
-        {
-          userStyling.flashRed();
-        }
-        else
-        {
-          userStyling.textColorChange(false);
-        }
+        userStyling.flashRed();
+      }
+      else
+      {
+        userStyling.textColorChange(false);
       }
     }
   }
@@ -1385,10 +1382,9 @@ function doTimerControl()
         updateTimer(scheduleData.times.assembly[settings.grade], scheduleData.names.assembly[settings.grade]);
       }
       else if (settings.schedule === 1)
-      { 
-        const date = new Date();
+      {
         let day;
-        switch (date.getDay())
+        switch (yes.getDay())
         {
           case 1:
             day = "monday";
@@ -1466,12 +1462,70 @@ function doTimerControl()
     }
   }
   else if (!settings.paused)
+  {
+    periodDisplay.innerHTML = lang[settings.lang].summer;
+    const dayIfNecessary = settings.grade ? 86400000 : 0
+    timerDisplay.innerHTML = time.fromMilliseconds(Number(new Date("12 Aug 2024 07:50:00")) - Number(yes) + dayIfNecessary) + lang[settings.lang].ussa;
+  }
+  update("dark mode");
+  const width = getWidth(periodDisplay);
+  if (width < 9.75)
+  {
+    periodDisplay.style.fontSize = "250px";
+  }
+  else
+  {
+    periodDisplay.style.fontSize = `${Math.floor(250*9.75/width)}px`;
+  }
+}
+
+/**
+ * 
+ * @param {string} string 
+ * @param {number} craziness Code point can go this many in either direction, decimal after adds a fraction of the chance
+ */
+function glitch(string, craziness)
+{
+  craziness += 0.5;
+  let retval = "";
+  for (let i of string)
+  {
+    let newCode = -1;
+    while (newCode < 0x1f || (newCode > 0x7e && newCode < 0xa0))
     {
-      periodDisplay.innerHTML = lang[settings.lang].summer;
-      const dayIfNecessary = settings.grade ? 86400000 : 0
-      timerDisplay.innerHTML = time.fromMilliseconds(Number(new Date("12 Aug 2024 07:50:00")) - Number(yes) + dayIfNecessary) + lang[settings.lang].ussa;
+      newCode = i.codePointAt(0) + Math.round((Math.random()*craziness*2)-craziness);
     }
-    update("dark mode");
+    retval += String.fromCodePoint(newCode);
+  }
+  return retval;
+}
+
+/**
+ * 
+ * @param {HTMLElement} element 
+ */
+function getWidth(element)
+{
+  let width = 0;
+  for (let i of element.childNodes)
+  {
+    if (i.nodeType === 3)
+    {
+      width += i.textContent.length;
+    }
+    else if (i.nodeType === 1)
+    {
+      if (["SUP", "SUB"].includes(i.tagName))
+      {
+        width += getWidth(i)*0.75;
+      }
+      else
+      {
+        width += getWidth(i);
+      }
+    }
+  }
+  return width;
 }
 
 function handleImage(event)
