@@ -77,36 +77,36 @@ const scheduleData = {
                   "14:13", "15:00", // P7 1 THS
                 ],
                 tuesday: [// Start, End
-                  "07:55", "09:30", // P1/2 1 THS BLOCK
+                  "07:55", "09:29", // P1/2 1 THS BLOCK
                   "09:35", "10:22", // P3   1 THS BLOCK
                   "10:27", "11:10", // TrTi 1 THS BLOCK
                /*Teleport*/"11:40", // Lunc 1 THS BLOCK
                   "11:45", "13:20", // P4/5 1 THS BLOCK
-                  "13:25", "15:00", // P6/7 1 THS BLOCK
+                  "13:26", "15:00", // P6/7 1 THS BLOCK
                 ],
                 wednesday: [// Start, End
-                  "07:55", "09:30", // P1/2 1 THS BLOCK
+                  "07:55", "09:29", // P1/2 1 THS BLOCK
                   "09:35", "10:22", // P3   1 THS BLOCK
                   "10:27", "11:10", // TrTi 1 THS BLOCK
                /*Teleport*/"11:40", // Lunc 1 THS BLOCK
                   "11:45", "13:20", // P4/5 1 THS BLOCK
-                  "13:25", "15:00", // P6/7 1 THS BLOCK
+                  "13:26", "15:00", // P6/7 1 THS BLOCK
                 ],
                 thursday: [// Start, End
-                  "07:55", "09:30", // P1/2 1 THS BLOCK
+                  "07:55", "09:29", // P1/2 1 THS BLOCK
                   "09:35", "10:22", // P3   1 THS BLOCK
                   "10:27", "11:10", // TrTi 1 THS BLOCK
                /*Teleport*/"11:40", // Lunc 1 THS BLOCK
                   "11:45", "13:20", // P4/5 1 THS BLOCK
-                  "13:25", "15:00", // P6/7 1 THS BLOCK
+                  "13:26", "15:00", // P6/7 1 THS BLOCK
                 ],
                 friday: [// Start, End
-                  "07:55", "09:30", // P1/2 1 THS BLOCK
+                  "07:55", "09:29", // P1/2 1 THS BLOCK
                   "09:35", "10:22", // P3   1 THS BLOCK
                   "10:27", "11:10", // TrTi 1 THS BLOCK
                /*Teleport*/"11:40", // Lunc 1 THS BLOCK
                   "11:45", "13:20", // P4/5 1 THS BLOCK
-                  "13:25", "15:00", // P6/7 1 THS BLOCK
+                  "13:26", "15:00", // P6/7 1 THS BLOCK
                 ],
               },
               {
@@ -122,36 +122,36 @@ const scheduleData = {
                   "14:13", "15:00", // P7 2 THS
                 ],
                 tuesday: [// Start, End
-                  "07:55", "09:30", // P1/2 2 THS BLOCK
+                  "07:55", "09:29", // P1/2 2 THS BLOCK
                   "09:35", "10:22", // P3   2 THS BLOCK
                   "10:27", "11:10", // TrTi 2 THS BLOCK
                   "11:15", "12:50", // P4/5 2 THS BLOCK
                /*Teleport*/"13:20", // Lunc 2 THS BLOCK
-                  "13:25", "15:00", // P6/7 2 THS BLOCK
+                  "13:26", "15:00", // P6/7 2 THS BLOCK
                 ],
                 wednesday: [// Start, End
-                  "07:55", "09:30", // P1/2 2 THS BLOCK
+                  "07:55", "09:29", // P1/2 2 THS BLOCK
                   "09:35", "10:22", // P3   2 THS BLOCK
                   "10:27", "11:10", // TrTi 2 THS BLOCK
                   "11:15", "12:50", // P4/5 2 THS BLOCK
                /*Teleport*/"13:20", // Lunc 2 THS BLOCK
-                  "13:25", "15:00", // P6/7 2 THS BLOCK
+                  "13:26", "15:00", // P6/7 2 THS BLOCK
                 ],
                 thursday: [// Start, End
-                  "07:55", "09:30", // P1/2 2 THS BLOCK
+                  "07:55", "09:29", // P1/2 2 THS BLOCK
                   "09:35", "10:22", // P3   2 THS BLOCK
                   "10:27", "11:10", // TrTi 2 THS BLOCK
                   "11:15", "12:50", // P4/5 2 THS BLOCK
                /*Teleport*/"13:20", // Lunc 2 THS BLOCK
-                  "13:25", "15:00", // P6/7 2 THS BLOCK
+                  "13:26", "15:00", // P6/7 2 THS BLOCK
                 ],
                 friday: [// Start, End
-                  "07:55", "09:30", // P1/2 2 THS BLOCK
+                  "07:55", "09:29", // P1/2 2 THS BLOCK
                   "09:35", "10:22", // P3   2 THS BLOCK
                   "10:27", "11:10", // TrTi 2 THS BLOCK
                   "11:15", "12:50", // P4/5 2 THS BLOCK
                /*Teleport*/"13:20", // Lunc 2 THS BLOCK
-                  "13:25", "15:00", // P6/7 2 THS BLOCK
+                  "13:26", "15:00", // P6/7 2 THS BLOCK
                 ],
               }
             ],
@@ -302,7 +302,7 @@ const scheduleData = {
                   ["2-3", "2-3", "2-3"],
                   ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-TT", "3-TT", "3-TT"],
-                  ["Tro. Time", "Tiem. Tro.", "Tem. Tro."],
+                  ["Trojan Time", "Tiem. Tro.", "Tem. Tro."],
                   ["TT-4", "TT-4", "TT-4"],
                   ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
@@ -318,7 +318,7 @@ const scheduleData = {
                   ["2-3", "2-3", "2-3"],
                   ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-TT", "3-TT", "3-TT"],
-                  ["Tro. Time", "Tro. Time", "Tro. Time"],
+                  ["Trojan Time", "Trojan Time", "Trojan Time"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-4", "Almuerzo-4", "Déjeuner-4"],
                   ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
@@ -329,8 +329,8 @@ const scheduleData = {
                   ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>e</sup> cours"],
                   ["1-3", "1-3", "1-3"],
                   ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
-                  ["3-Tro. Time", "3-Tiem. Tro.", "3-Tem. Tro."],
-                  ["Tro. Time", "Tro. Time", "Tro. Time"],
+                  ["3-Trojan Time", "3-Tiem. Tro.", "3-Tem. Tro."],
+                  ["Trojan Time", "Trojan Time", "Trojan Time"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-5", "Almuerzo-5", "Déjeuner-5"],
                   ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
@@ -341,8 +341,8 @@ const scheduleData = {
                   ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                   ["2-3", "2-3", "2-3"],
                   ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
-                  ["3-Tro. Time", "3-Tiem. Tro.", "3-Tem. Tro."],
-                  ["Tro. Time", "Tro. Time", "Tro. Time"],
+                  ["3-Trojan Time", "3-Tiem. Tro.", "3-Tem. Tro."],
+                  ["Trojan Time", "Trojan Time", "Trojan Time"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-4", "Almuerzo-4", "Déjeuner-4"],
                   ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
@@ -350,11 +350,11 @@ const scheduleData = {
                   ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ],
                 friday: [ // THS 1 ODD BLOCK
-                  ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
-                  ["1-Tro. Time", "1-Tiem. Tro.", "1-Tem. Tro."],
-                  ["Tro. Time", "Tiem. Tro.", "Tem. Tro."],
-                  ["Tro. Time-3", "Tiem. Tro.-3", "Tem. Tro.-3"],
+                  ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>e</sup> cours"],
+                  ["1-3", "1-3", "1-3"],
                   ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
+                  ["3-Trojan Time", "3-Tiem. Tro.", "3-Tem. Tro."],
+                  ["Trojan Time", "Trojan Time", "Trojan Time"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-5", "Almuerzo-5", "Déjeuner-5"],
                   ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
@@ -370,7 +370,7 @@ const scheduleData = {
                   ["2-3", "2-3", "2-3"],
                   ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-TT", "3-TT", "3-TT"],
-                  ["Tro. Time", "Tiem. Tro.", "Tem. Tro."],
+                  ["Trojan Time", "Tiem. Tro.", "Tem. Tro."],
                   ["TT-4", "TT-4", "TT-4"],
                   ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                   ["4-5", "4-5", "4-5"],
@@ -386,7 +386,7 @@ const scheduleData = {
                   ["2-3", "2-3", "2-3"],
                   ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-TT", "3-TT", "3-TT"],
-                  ["Tro. Time", "Tro. Time", "Tro. Time"],
+                  ["Trojan Time", "Trojan Time", "Trojan Time"],
                   ["TT-4", "TT-4", "TT-4"],
                   ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
@@ -397,8 +397,8 @@ const scheduleData = {
                   ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>e</sup> cours"],
                   ["1-3", "1-3", "1-3"],
                   ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
-                  ["3-Tro. Time", "3-Tiem. Tro.", "3-Tem. Tro."],
-                  ["Tro. Time", "Tro. Time", "Tro. Time"],
+                  ["3-Trojan Time", "3-Tiem. Tro.", "3-Tem. Tro."],
+                  ["Trojan Time", "Trojan Time", "Trojan Time"],
                   ["TT-5", "TT-5", "TT-5"],
                   ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
@@ -410,7 +410,7 @@ const scheduleData = {
                   ["2-3", "2-3", "2-3"],
                   ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-TT", "3-TT", "3-TT"],
-                  ["Tro. Time", "Tro. Time", "Tro. Time"],
+                  ["Trojan Time", "Trojan Time", "Trojan Time"],
                   ["TT-4", "TT-4", "TT-4"],
                   ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
@@ -421,8 +421,8 @@ const scheduleData = {
                   ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>e</sup> cours"],
                   ["1-3", "1-3", "1-3"],
                   ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
-                  ["3-Tro. Time", "3-Tiem. Tro.", "3-Tem. Tro."],
-                  ["Tro. Time", "Tro. Time", "Tro. Time"],
+                  ["3-Trojan Time", "3-Tiem. Tro.", "3-Tem. Tro."],
+                  ["Trojan Time", "Trojan Time", "Trojan Time"],
                   ["TT-5", "TT-5", "TT-5"],
                   ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
@@ -561,10 +561,20 @@ const scheduleData = {
       [1, 3, 5, 7, 10, 12, 14, 16], // 6th grade
       [1, 3, 5, 7,  9, 12, 14, 16], // 7th grade
       [1, 3, 5, 7,  9, 11, 14, 16], // 8th grade
-      [1, 3, 5, 8, 10, 12, 14], // THS 1st lunch
-      [1, 3, 5, 7, 10, 12, 14], // THS 2nd lunch
-      [1, 3, 6, 8], // THS 1st lunch BLOCK SCHED
-      [1, 3, 5, 8], // THS 2nd lunch BLOCK SCHED
+      {
+        monday: [1, 3, 5, 7, 10, 12, 14],
+        tuesday: [1, 3, 6, 8],
+        wednesday: [1, 3, 6, 8],
+        thursday: [1, 3, 6, 8],
+        friday: [1, 3, 6, 8]
+      }, // THS 1st lunch
+      {
+        monday: [1, 3, 5, 7, 9, 12, 14],
+        tuesday: [1, 3, 5, 8],
+        wednesday: [1, 3, 5, 8],
+        thursday: [1, 3, 5, 8],
+        friday: [1, 3, 5, 8]
+      }, // THS 2nd lunch
     ],
     test: [
       [1, 3, 5, 8, 10, 12, 14, 16], // 6th grade
@@ -1368,8 +1378,8 @@ function doTimerControl()
   const timeOfDay = (Date.now() + (time.testingOffset * 3600_000)) % 86400000;
   const isWeekend = ((time.ofWeek(15,  0,  0, 1) < timeOfWeek) && (timeOfWeek < time.ofWeek(7, 50, 1, 4)));
   let isSummer = ((yes.getMonth() >= 4) && (yes.getMonth() <= 7));
-  //                   August               the 12th                    May                 the 23rd
-  if ((yes.getMonth() == 7 && yes.getDate() >= 12) || (yes.getMonth() == 4 && yes.getDate() <= 23))
+  //                   August               the 12th                    May                 the 29th
+  if ((yes.getMonth() == 7 && yes.getDate() >= 12) || (yes.getMonth() == 4 && yes.getDate() <= 29))
   {
     isSummer = false;
   }
@@ -1411,11 +1421,9 @@ function doTimerControl()
         const timesIn = Array.isArray(scheduleData.times.normal[settings.grade]) ? scheduleData.times.normal[settings.grade] : scheduleData.times.normal[settings.grade][day];
         const namesIn = Array.isArray(scheduleData.names.normal[settings.grade]) ? scheduleData.names.normal[settings.grade] : scheduleData.names.normal[settings.grade][day];
         const passingIn = Array.isArray(scheduleData.passing.normal[settings.grade]) ? scheduleData.passing.normal[settings.grade] : scheduleData.passing.normal[settings.grade][day];
-
-        //                                      Is middle school        Is Wednesday or Thursday              Block schedule
-          // debugger;
+        // debugger;
         updateTimer(timesIn, namesIn, settings.grade > 2  ? 120 : 0,
-        scheduleData.passing.normal[!(settings.grade < 3) && (yes.getDay() == 3 || yes.getDay() == 4) ? settings.grade + 2 : settings.grade]);
+        passingIn);
       }
       else
       {
@@ -1464,18 +1472,19 @@ function doTimerControl()
   else if (!settings.paused)
   {
     periodDisplay.innerHTML = lang[settings.lang].summer;
-    const dayIfNecessary = settings.grade ? 86400000 : 0
-    timerDisplay.innerHTML = time.fromMilliseconds(Number(new Date("12 Aug 2024 07:50:00")) - Number(yes) + dayIfNecessary) + lang[settings.lang].ussa;
+    const dayIfNecessary = settings.grade ? 86400000 : 0;
+    let startTime = settings.grade < 3 ? "07:50" : "07:55";
+    timerDisplay.innerHTML = time.fromMilliseconds(new Date("12 Aug " + yes.getFullYear().toString() + " " + startTime + ":00").valueOf() - yes.valueOf() + dayIfNecessary) + lang[settings.lang].ussa;
   }
   update("dark mode");
   const width = getWidth(periodDisplay);
-  if (width < 9.75)
+  if (width < 8.5)
   {
     periodDisplay.style.fontSize = "250px";
   }
   else
   {
-    periodDisplay.style.fontSize = `${Math.floor(250*9.75/width)}px`;
+    periodDisplay.style.fontSize = `${Math.floor(250*8.5/width)}px`;
   }
 }
 
@@ -1517,7 +1526,7 @@ function getWidth(element)
     {
       if (["SUP", "SUB"].includes(i.tagName))
       {
-        width += getWidth(i)*0.75;
+        width += getWidth(i)*0.8;
       }
       else
       {
