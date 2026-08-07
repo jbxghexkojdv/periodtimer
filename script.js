@@ -109,51 +109,6 @@ const scheduleData = {
                   "13:27", "15:00", // P6/7 THS BLOCK
                 ],
               },
-              {
-                monday: [// Start, End
-                  "07:55", "08:41", // P1 THS
-                  "08:46", "09:32", // P2 THS
-                  "09:37", "10:23", // P3 THS
-                  "10:28", "11:01", // TT THS
-                  "11:06", "11:52", // P4 THS
-                  "11:57", "12:27", // Lu THS
-                  "12:32", "13:18", // P5 THS
-                  "13:23", "14:09", // P6 THS
-                  "14:14", "15:00", // P7 THS
-                ],
-                tuesday: [// Start, End
-                  "07:55", "09:29", // P1/2 2 THS BLOCK
-                  "09:35", "10:22", // P3   2 THS BLOCK
-                  "10:27", "11:10", // TrTi 2 THS BLOCK
-                  "11:15", "12:50", // P4/5 2 THS BLOCK
-               /*Teleport*/"13:20", // Lunc 2 THS BLOCK
-                  "13:26", "15:00", // P6/7 2 THS BLOCK
-                ],
-                wednesday: [// Start, End
-                  "07:55", "09:29", // P1/2 2 THS BLOCK
-                  "09:35", "10:22", // P3   2 THS BLOCK
-                  "10:27", "11:10", // TrTi 2 THS BLOCK
-                  "11:15", "12:50", // P4/5 2 THS BLOCK
-               /*Teleport*/"13:20", // Lunc 2 THS BLOCK
-                  "13:26", "15:00", // P6/7 2 THS BLOCK
-                ],
-                thursday: [// Start, End
-                  "07:55", "09:29", // P1/2 2 THS BLOCK
-                  "09:35", "10:22", // P3   2 THS BLOCK
-                  "10:27", "11:10", // TrTi 2 THS BLOCK
-                  "11:15", "12:50", // P4/5 2 THS BLOCK
-               /*Teleport*/"13:20", // Lunc 2 THS BLOCK
-                  "13:26", "15:00", // P6/7 2 THS BLOCK
-                ],
-                friday: [// Start, End
-                  "07:55", "09:29", // P1/2 2 THS BLOCK
-                  "09:35", "10:22", // P3   2 THS BLOCK
-                  "10:27", "11:10", // TrTi 2 THS BLOCK
-                  "11:15", "12:50", // P4/5 2 THS BLOCK
-               /*Teleport*/"13:20", // Lunc 2 THS BLOCK
-                  "13:26", "15:00", // P6/7 2 THS BLOCK
-                ],
-              }
             ],
     test:   [
               [// Start    End
