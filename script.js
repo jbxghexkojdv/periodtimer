@@ -66,60 +66,60 @@ const scheduleData = {
               ],
               {
                 monday: [// Start, End
-                  "07:55", "08:42", // P1 1 THS
-                  "08:47", "09:34", // P2 1 THS
-                  "09:39", "10:26", // P3 1 THS
-                  "10:31", "11:02", // TT 1 THS
-                  "11:07", "11:54", // P4 1 THS
-               /*Teleport*/"12:24", // Lu 1 THS
-                  "12:29", "13:16", // P5 1 THS
-                  "13:21", "14:08", // P6 1 THS
-                  "14:13", "15:00", // P7 1 THS
+                  "07:55", "08:41", // P1 THS
+                  "08:46", "09:32", // P2 THS
+                  "09:37", "10:23", // P3 THS
+                  "10:28", "11:01", // TT THS
+                  "11:06", "11:52", // P4 THS
+                  "11:57", "12:27", // Lu THS
+                  "12:32", "13:18", // P5 THS
+                  "13:23", "14:09", // P6 THS
+                  "14:14", "15:00", // P7 THS
                 ],
                 tuesday: [// Start, End
-                  "07:55", "09:29", // P1/2 1 THS BLOCK
-                  "09:35", "10:22", // P3   1 THS BLOCK
-                  "10:27", "11:10", // TrTi 1 THS BLOCK
-               /*Teleport*/"11:40", // Lunc 1 THS BLOCK
-                  "11:45", "13:20", // P4/5 1 THS BLOCK
-                  "13:26", "15:00", // P6/7 1 THS BLOCK
+                  "07:55", "09:28", // P1/2 THS BLOCK
+                  "09:33", "10:20", // P3   THS BLOCK
+                  "10:25", "11:09", // TrTi THS BLOCK
+                  "11:14", "11:44", // Lunc THS BLOCK
+                  "11:49", "13:22", // P4/5 THS BLOCK
+                  "13:27", "15:00", // P6/7 THS BLOCK
                 ],
                 wednesday: [// Start, End
-                  "07:55", "09:29", // P1/2 1 THS BLOCK
-                  "09:35", "10:22", // P3   1 THS BLOCK
-                  "10:27", "11:10", // TrTi 1 THS BLOCK
-               /*Teleport*/"11:40", // Lunc 1 THS BLOCK
-                  "11:45", "13:20", // P4/5 1 THS BLOCK
-                  "13:26", "15:00", // P6/7 1 THS BLOCK
+                  "07:55", "09:28", // P1/2 THS BLOCK
+                  "09:33", "10:20", // P3   THS BLOCK
+                  "10:25", "11:09", // TrTi THS BLOCK
+                  "11:14", "11:44", // Lunc THS BLOCK
+                  "11:49", "13:22", // P4/5 THS BLOCK
+                  "13:27", "15:00", // P6/7 THS BLOCK
                 ],
                 thursday: [// Start, End
-                  "07:55", "09:29", // P1/2 1 THS BLOCK
-                  "09:35", "10:22", // P3   1 THS BLOCK
-                  "10:27", "11:10", // TrTi 1 THS BLOCK
-               /*Teleport*/"11:40", // Lunc 1 THS BLOCK
-                  "11:45", "13:20", // P4/5 1 THS BLOCK
-                  "13:26", "15:00", // P6/7 1 THS BLOCK
+                  "07:55", "09:28", // P1/2 THS BLOCK
+                  "09:33", "10:20", // P3   THS BLOCK
+                  "10:25", "11:09", // TrTi THS BLOCK
+                  "11:14", "11:44", // Lunc THS BLOCK
+                  "11:49", "13:22", // P4/5 THS BLOCK
+                  "13:27", "15:00", // P6/7 THS BLOCK
                 ],
                 friday: [// Start, End
-                  "07:55", "09:29", // P1/2 1 THS BLOCK
-                  "09:35", "10:22", // P3   1 THS BLOCK
-                  "10:27", "11:10", // TrTi 1 THS BLOCK
-               /*Teleport*/"11:40", // Lunc 1 THS BLOCK
-                  "11:45", "13:20", // P4/5 1 THS BLOCK
-                  "13:26", "15:00", // P6/7 1 THS BLOCK
+                  "07:55", "09:28", // P1/2 THS BLOCK
+                  "09:33", "10:20", // P3   THS BLOCK
+                  "10:25", "11:09", // TrTi THS BLOCK
+                  "11:14", "11:44", // Lunc THS BLOCK
+                  "11:49", "13:22", // P4/5 THS BLOCK
+                  "13:27", "15:00", // P6/7 THS BLOCK
                 ],
               },
               {
                 monday: [// Start, End
-                  "07:55", "08:42", // P1 2 THS
-                  "08:47", "09:34", // P2 2 THS
-                  "09:39", "10:26", // P3 2 THS
-                  "10:31", "11:02", // TT 2 THS
-                  "11:07", "11:54", // P4 2 THS
-                  "11:59", "12:46", // P5 2 THS
-               /*Teleport*/"13:16", // Lu 2 THS
-                  "13:21", "14:08", // P6 2 THS
-                  "14:13", "15:00", // P7 2 THS
+                  "07:55", "08:41", // P1 THS
+                  "08:46", "09:32", // P2 THS
+                  "09:37", "10:23", // P3 THS
+                  "10:28", "11:01", // TT THS
+                  "11:06", "11:52", // P4 THS
+                  "11:57", "12:27", // Lu THS
+                  "12:32", "13:18", // P5 THS
+                  "13:23", "14:09", // P6 THS
+                  "14:14", "15:00", // P7 THS
                 ],
                 tuesday: [// Start, End
                   "07:55", "09:29", // P1/2 2 THS BLOCK
@@ -295,7 +295,7 @@ const scheduleData = {
                 ["8<sup>th</sup> period", "8<sup>a</sup> hora", "8<sup>e</sup> cours"]
               ],
               {
-                monday: [ // THS 1
+                monday: [ // THS
                   ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
                   ["1-2", "1-2", "1-2"],
                   ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
@@ -305,6 +305,7 @@ const scheduleData = {
                   ["Trojan Time", "Tiem. Tro.", "Tem. Tro."],
                   ["TT-4", "TT-4", "TT-4"],
                   ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
+                  ["4-Lunch", "4-Almuerzo", "4-Déjeuner"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-5", "Almuerzo-5", "Déjeuner-5"],
                   ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
@@ -313,120 +314,56 @@ const scheduleData = {
                   ["6-7", "6-7", "6-7"],
                   ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ],
-                tuesday: [ // THS 1 EVEN BLOCK
+                tuesday: [ // THS EVEN BLOCK
                   ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                   ["2-3", "2-3", "2-3"],
                   ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-TT", "3-TT", "3-TT"],
                   ["Trojan Time", "Trojan Time", "Trojan Time"],
+                  ["TT-Lunch", "TT-Almuerzo", "TT-Déjeuner"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-4", "Almuerzo-4", "Déjeuner-4"],
                   ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                   ["4-6", "4-6", "4-6"],
                   ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ],
-                wednesday: [ // THS 1 ODD BLOCK
+                wednesday: [ // THS ODD BLOCK
                   ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>e</sup> cours"],
                   ["1-3", "1-3", "1-3"],
                   ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-Trojan Time", "3-Tiem. Tro.", "3-Tem. Tro."],
                   ["Trojan Time", "Trojan Time", "Trojan Time"],
+                  ["TT-Lunch", "TT-Almuerzo", "TT-Déjeuner"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-5", "Almuerzo-5", "Déjeuner-5"],
                   ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                   ["5-7", "5-7", "5-7"],
                   ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ],
-                thursday: [ // THS 1 EVEN BLOCK
+                thursday: [ // THS EVEN BLOCK
                   ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
                   ["2-3", "2-3", "2-3"],
                   ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-Trojan Time", "3-Tiem. Tro.", "3-Tem. Tro."],
                   ["Trojan Time", "Trojan Time", "Trojan Time"],
+                  ["TT-Lunch", "TT-Almuerzo", "TT-Déjeuner"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-4", "Almuerzo-4", "Déjeuner-4"],
                   ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
                   ["4-6", "4-6", "4-6"],
                   ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
                 ],
-                friday: [ // THS 1 ODD BLOCK
+                friday: [ // THS ODD BLOCK
                   ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>e</sup> cours"],
                   ["1-3", "1-3", "1-3"],
                   ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
                   ["3-Trojan Time", "3-Tiem. Tro.", "3-Tem. Tro."],
                   ["Trojan Time", "Trojan Time", "Trojan Time"],
+                  ["TT-Lunch", "TT-Almuerzo", "TT-Déjeuner"],
                   ["Lunch", "Almuerzo", "Déjeuner"],
                   ["Lunch-5", "Almuerzo-5", "Déjeuner-5"],
                   ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
                   ["5-7", "5-7", "5-7"],
-                  ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
-                ]
-              },
-              {
-                monday: [ // THS 2
-                  ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>er</sup> cours"],
-                  ["1-2", "1-2", "1-2"],
-                  ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
-                  ["2-3", "2-3", "2-3"],
-                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
-                  ["3-TT", "3-TT", "3-TT"],
-                  ["Trojan Time", "Tiem. Tro.", "Tem. Tro."],
-                  ["TT-4", "TT-4", "TT-4"],
-                  ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
-                  ["4-5", "4-5", "4-5"],
-                  ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
-                  ["Lunch", "Almuerzo", "Déjeuner"],
-                  ["Lunch-6", "Almuerzo-6", "Déjeuner-6"],
-                  ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
-                  ["6-7", "6-7", "6-7"],
-                  ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
-                ],
-                tuesday: [ // THS 2 EVEN BLOCK
-                  ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
-                  ["2-3", "2-3", "2-3"],
-                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
-                  ["3-TT", "3-TT", "3-TT"],
-                  ["Trojan Time", "Trojan Time", "Trojan Time"],
-                  ["TT-4", "TT-4", "TT-4"],
-                  ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
-                  ["Lunch", "Almuerzo", "Déjeuner"],
-                  ["Lunch-6", "Almuerzo-6", "Déjeuner-6"],
-                  ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
-                ],
-                wednesday: [ // THS 2 ODD BLOCK
-                  ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>e</sup> cours"],
-                  ["1-3", "1-3", "1-3"],
-                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
-                  ["3-Trojan Time", "3-Tiem. Tro.", "3-Tem. Tro."],
-                  ["Trojan Time", "Trojan Time", "Trojan Time"],
-                  ["TT-5", "TT-5", "TT-5"],
-                  ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
-                  ["Lunch", "Almuerzo", "Déjeuner"],
-                  ["Lunch-7", "Almuerzo-7", "Déjeuner-7"],
-                  ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
-                ],
-                thursday: [ // THS 2 EVEN BLOCK
-                  ["2<sup>nd</sup> period", "2<sup>a</sup> hora", "2<sup>e</sup> cours"],
-                  ["2-3", "2-3", "2-3"],
-                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
-                  ["3-TT", "3-TT", "3-TT"],
-                  ["Trojan Time", "Trojan Time", "Trojan Time"],
-                  ["TT-4", "TT-4", "TT-4"],
-                  ["4<sup>th</sup> period", "4<sup>a</sup> hora", "4<sup>e</sup> cours"],
-                  ["Lunch", "Almuerzo", "Déjeuner"],
-                  ["Lunch-6", "Almuerzo-6", "Déjeuner-6"],
-                  ["6<sup>th</sup> period", "6<sup>a</sup> hora", "6<sup>e</sup> cours"],
-                ],
-                friday: [ // THS 2 ODD BLOCK
-                  ["1<sup>st</sup> period", "1<sup>a</sup> hora", "1<sup>e</sup> cours"],
-                  ["1-3", "1-3", "1-3"],
-                  ["3<sup>rd</sup> period", "3<sup>a</sup> hora", "3<sup>e</sup> cours"],
-                  ["3-Trojan Time", "3-Tiem. Tro.", "3-Tem. Tro."],
-                  ["Trojan Time", "Trojan Time", "Trojan Time"],
-                  ["TT-5", "TT-5", "TT-5"],
-                  ["5<sup>th</sup> period", "5<sup>a</sup> hora", "5<sup>e</sup> cours"],
-                  ["Lunch", "Almuerzo", "Déjeuner"],
-                  ["Lunch-7", "Almuerzo-7", "Déjeuner-7"],
                   ["7<sup>th</sup> period", "7<sup>a</sup> hora", "7<sup>e</sup> cours"],
                 ]
               },
@@ -567,13 +504,13 @@ const scheduleData = {
         wednesday: [1, 3, 6, 8],
         thursday: [1, 3, 6, 8],
         friday: [1, 3, 6, 8]
-      }, // THS 1st lunch
+      }, // THS
       {
-        monday: [1, 3, 5, 7, 9, 12, 14],
-        tuesday: [1, 3, 5, 8],
-        wednesday: [1, 3, 5, 8],
-        thursday: [1, 3, 5, 8],
-        friday: [1, 3, 5, 8]
+        monday: [1, 3, 5, 7, 9, 11, 13, 15],
+        tuesday: [1, 3, 5, 7, 9],
+        wednesday: [1, 3, 5, 7, 9],
+        thursday: [1, 3, 5, 7, 9],
+        friday: [1, 3, 5, 7, 9],
       }, // THS 2nd lunch
     ],
     test: [
@@ -582,7 +519,7 @@ const scheduleData = {
       [1, 3, 5, 7,  9, 12, 14, 16], // 8th grade
     ],
     assembly: [
- // if you want this data you can go die in a hole
+ // if you want this data you can live peacefully and frolic in the fields without it
     ]
   }
 };
@@ -674,8 +611,8 @@ const lang = [
       gr6sched: "RMS 6",
       gr7sched: "RMS 7",
       gr8sched: "RMS 8",
-      ths1: "THS 1st lunch",
-      ths2: "THS 2nd lunch",
+      ths1: "THS",
+      ths2: "THS",
       paused: "Paused",
       dark: "Dark Mode",
       light: "Light Mode",
@@ -694,8 +631,8 @@ const lang = [
       gr6sched: "EMR 6",
       gr7sched: "EMR 7",
       gr8sched: "EMR 8",
-      ths1: "EST 1er almuerzo",
-      ths2: "EST 2do almuerzo", 
+      ths1: "EST",
+      ths2: "EST", 
       paused: "Pausado",
       dark: "Modo oscuro",
       light: "Modo claro",
@@ -714,8 +651,8 @@ const lang = [
       gr6sched: "CR 6",
       gr7sched: "CR 5",
       gr8sched: "CR 4",
-      ths1: "LT 1re déjeuner",
-      ths2: "LT 2de déjeuner",
+      ths1: "LT",
+      ths2: "LT",
       paused: "Arrêté",
       dark: "Mode foncé",
       light: "Mode claire",
@@ -804,9 +741,9 @@ const keys = {
       break;
       case "Digit9": // set to THS 1st lunch schedule
       settings.grade = 3;
-        break;
+      break;
         case "Digit0": // set to THS 2nd lunch schedule
-        settings.grade = 4;
+        // settings.grade = 4;
         break;
       case "KeyA": // australian mode
       mainModule.australian();
@@ -1067,9 +1004,9 @@ const userStyling =
     }
     if (settings.grade < 0)
     {
-      settings.grade += 5;
+      settings.grade += scheduleData.times.normal.length;
     }
-    settings.grade %= 5;
+    settings.grade %= scheduleData.times.normal.length;
     mainModule.setSettings(settings);
     update("grade");
   },
