@@ -751,8 +751,17 @@ const keys = {
         case "KeyN": // stop using schedule
         settings.useCustomSchedule = false;
         break;
-        case "KeyP": // pause
-        settings.paused = !settings.paused;
+        case "KeyP":
+        if (!settings.shifting)
+        { // pause
+          settings.paused = !settings.paused;
+        }
+        else
+        { // palestinian mode
+          document.getElementById("bgimg").src = "a3.png";
+          document.getElementById("bgimg").style.display = "block";
+          update("dark mode");
+        }
         break;
         case "KeyR": // reset settings
         mainModule.setSettings(
